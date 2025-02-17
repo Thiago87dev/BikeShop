@@ -24,7 +24,9 @@ const HeroPart1 = () => {
         <div className="flex flex-col items-center justify-center text-white w-1/2 ">
           <div>
             <p className="text-red-500 font-bold text-lg">Mountain Bike</p>
-            <h1 className="font-bold text-[80px] leading-none mb-12">Bike With Unbelievable Dynamics</h1>
+            <h1 className="font-bold text-[80px] leading-none mb-12">
+              Bike With Unbelievable Dynamics
+            </h1>
             <div className="flex gap-10">
               <ul>
                 {bikeNames.slice(0, 3).map((item, index) => (
@@ -43,7 +45,9 @@ const HeroPart1 = () => {
             </div>
             <div className="flex items-center gap-14 mt-8">
               <p className="text-3xl font-bold">$1,920</p>
-              <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200">Shop now</button>
+              <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
+                Shop now
+              </button>
             </div>
           </div>
         </div>
