@@ -21,7 +21,7 @@ const Navbar = () => {
     { label: "Blog", path: "/" },
   ];
   return (
-    <nav className="bg-gray-300 px-6 relative">
+    <nav className="bg-gray-300 px-6 relative z-50">
       <div className="flex items-center justify-between mx-auto w-full max-w-[1160px] py-5">
         <div>
           <Link href={"/"}>
