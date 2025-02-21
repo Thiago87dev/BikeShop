@@ -20,15 +20,19 @@ const OurProducts = () => {
   return (
     <div className="relative  bg-[url('/img/tireBike.jpg')] bg-cover bg-center">
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="relative text-red-500 z-10">
-        {products[0] && (
-          <ProductCard
-            img={products[0].img}
-            name={products[0].name}
-            price={products[0].price}
-            withoutDiscont={products[0].withoutDiscont}
-          />
-        )}
+      <div className="relative grid grid-cols-4 text-black z-10 w-full max-w-[1160px] mx-auto gap-y-8">
+        {products
+          .filter((item) => item.img300x300)
+          .map((item) => (
+            <div key={item.id}>
+              <ProductCard
+                name={item.name}
+                price={item.price}
+                withoutDiscont={item.withoutDiscont}
+                img300x300={item.img300x300}
+              />
+            </div>
+          ))}
       </div>
     </div>
   );

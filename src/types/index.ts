@@ -9,4 +9,12 @@ export interface ProductProp {
   description: string[];
   features: string[];
   img: string;
+  img300x300?: string
+}
+
+export interface ProductCardProps {
+  img300x300?: string
+  name: string;
+  price: number;
+  withoutDiscont: number;
 }

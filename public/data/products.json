@@ -27,7 +27,7 @@
     "price": 780.00,
     "withoutDiscont": 0,
     "category": "Gravel",
-    "manufactureDate":2021,
+    "manufactureDate":2022,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -41,7 +41,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-2.jpg"
+    "img": "/img/products/product-2.jpg",
+    "img300x300":"/img/products/product-2-300x300.jpg"
   },
   {
     "id": 3,
@@ -63,7 +64,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-3.jpg"
+    "img": "/img/products/product-3.jpg",
+    "img300x300":"/img/products/product-3-300x300.jpg"
   },
   {
     "id": 4,
@@ -85,7 +87,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-4.jpg"
+    "img": "/img/products/product-4.jpg",
+    "img300x300":"/img/products/product-4-300x300.jpg"
   },
   {
     "id": 5,
@@ -173,7 +176,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-8.jpg"
+    "img": "/img/products/product-8.jpg",
+    "img300x300":"/img/products/product-8-300x300.jpg"
   },
   {
     "id": 9,
@@ -195,7 +199,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-9.jpg"
+    "img": "/img/products/product-9.jpg",
+    "img300x300":"/img/products/product-9-300x300.jpg"
   },
   {
     "id": 10,
@@ -217,7 +222,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-10.jpg"
+    "img": "/img/products/product-10.jpg",
+    "img300x300":"/img/products/product-10-300x300.jpg"
   },
   {
     "id": 11,
@@ -239,7 +245,8 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-11.jpg"
+    "img": "/img/products/product-11.jpg",
+    "img300x300":"/img/products/product-11-300x300.jpg"
   },
   {
     "id": 12,
@@ -261,6 +268,7 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-12.jpg"
+    "img": "/img/products/product-12.jpg",
+    "img300x300":"/img/products/product-12-300x300.jpg"
   }
 ]
