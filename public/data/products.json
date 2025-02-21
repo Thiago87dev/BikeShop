@@ -2,9 +2,10 @@
   {
     "id": 1,
     "name": "Batch The Mountain 27.5",
-    "Price": 885.0,
+    "price": 885.0,
     "withoutDiscont": 0,
     "category": "City & Hybrid",
+    "manufactureDate":2024,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -18,14 +19,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product1.jpg"
+    "img": "/img/products/product-1.jpg"
   },
   {
     "id": 2,
     "name": "Ibis Exie Xt 2022 Bike",
-    "Price": 780.00,
+    "price": 780.00,
     "withoutDiscont": 0,
     "category": "Gravel",
+    "manufactureDate":2021,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -39,14 +41,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product2.jpg"
+    "img": "/img/products/product-2.jpg"
   },
   {
     "id": 3,
     "name": "Juliana Wilder 20 Bike",
-    "Price": 990.00,
+    "price": 990.00,
     "withoutDiscont": 1240.00,
     "category": "City & Hybrid",
+    "manufactureDate":2022,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -60,14 +63,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product3.jpg"
+    "img": "/img/products/product-3.jpg"
   },
   {
     "id": 4,
     "name": "Marin Eldrige Grade",
-    "Price": 1240.00,
+    "price": 1240.00,
     "withoutDiscont": 0,
     "category": "City & Hybrid",
+    "manufactureDate":2025,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -81,14 +85,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product4.jpg"
+    "img": "/img/products/product-4.jpg"
   },
   {
     "id": 5,
     "name": "Marin Team Marin 2",
-    "Price": 1149.00,
+    "price": 1149.00,
     "withoutDiscont": 1240.00,
     "category": "Mountain",
+    "manufactureDate":2023,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -102,14 +107,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product5.jpg"
+    "img": "/img/products/product-5.jpg"
   },
   {
     "id": 6,
     "name": "Niner Air 2-star Bike",
-    "Price": 790.00,
+    "price": 790.00,
     "withoutDiscont": 0,
     "category": "Road",
+    "manufactureDate":2024,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -123,14 +129,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product6.jpg"
+    "img": "/img/products/product-6.jpg"
   },
   {
     "id": 7,
     "name": "Niner Air Rdo 3-star Bike",
-    "Price": 1990.00,
+    "price": 1990.00,
     "withoutDiscont": 0,
     "category": "Gravel",
+    "manufactureDate":2022,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -144,14 +151,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product7.jpg"
+    "img": "/img/products/product-7.jpg"
   },
   {
     "id": 8,
     "name": "Niner Air Rdo 4-star Bike",
-    "Price": 690.00,
+    "price": 690.00,
     "withoutDiscont": 0,
     "category": "Mountain",
+    "manufactureDate":2025,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -165,14 +173,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product8.jpg"
+    "img": "/img/products/product-8.jpg"
   },
   {
     "id": 9,
     "name": "Orbea Alma Bike",
-    "Price": 1240.00,
+    "price": 1240.00,
     "withoutDiscont": 1390.00,
     "category": "Mountain",
+    "manufactureDate":2021,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -186,14 +195,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product9.jpg"
+    "img": "/img/products/product-9.jpg"
   },
   {
     "id": 10,
     "name": "Redline Monocog Bike",
-    "Price": 1449.00,
+    "price": 1449.00,
     "withoutDiscont": 0,
     "category": "Road",
+    "manufactureDate":2023,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -207,14 +217,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product10.jpg"
+    "img": "/img/products/product-10.jpg"
   },
   {
     "id": 11,
     "name": "Santa Cruz Bike",
-    "Price": 990.00,
+    "price": 990.00,
     "withoutDiscont": 0,
     "category": "Gravel",
+    "manufactureDate":2024,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -228,14 +239,15 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product11.jpg"
+    "img": "/img/products/product-11.jpg"
   },
   {
     "id": 12,
     "name": "Specialized Tero Bike",
-    "Price": 790.00,
+    "price": 790.00,
     "withoutDiscont": 0,
     "category": "Road",
+    "manufactureDate":2025,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -249,6 +261,6 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product12.jpg"
+    "img": "/img/products/product-12.jpg"
   }
 ]
