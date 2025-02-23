@@ -8,10 +8,16 @@ const ProductCard = ({
   withoutDiscont,
 }: ProductCardProps) => {
   return (
-    <div className="w-[264px] h-[360px] bg-white">
+    <div className=" w-[264px] h-[360px] bg-white">
       <div>
         {img300x300 && (
-          <Image alt="img teste" src={img300x300} width={288} height={300} />
+          <Image
+            alt="img teste"
+            src={img300x300}
+            width={288}
+            height={300}
+            className="w-[264px]"
+          />
         )}
       </div>
       <div className="flex flex-col gap-2 py-4 h-[92px]">
