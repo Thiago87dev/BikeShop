@@ -33,6 +33,7 @@ const OurProducts = () => {
       <div className="relative flex flex-wrap justify-center text-black z-10 w-full max-w-[1160px] mx-auto gap-8 px-4 lg:px-0">
         {products
           .filter((item) => item.img300x300)
+          .sort((a, b) => b.qntSold - a.qntSold)
           .map((item) => (
             <div key={item.id}>
               <ProductCard
@@ -40,6 +41,7 @@ const OurProducts = () => {
                 price={item.price}
                 withoutDiscont={item.withoutDiscont}
                 img300x300={item.img300x300}
+                qntSold={item.qntSold}
               />
             </div>
           ))}

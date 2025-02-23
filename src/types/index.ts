@@ -10,6 +10,7 @@ export interface ProductProp {
   features: string[];
   img: string;
   img300x300?: string
+  qntSold: number
 }
 
 export interface ProductCardProps {
@@ -17,4 +18,5 @@ export interface ProductCardProps {
   name: string;
   price: number;
   withoutDiscont: number;
+  qntSold: number
 }

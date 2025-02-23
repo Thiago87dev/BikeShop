@@ -6,6 +6,7 @@
     "withoutDiscont": 0,
     "category": "City & Hybrid",
     "manufactureDate":2024,
+    "qntSold":0,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -28,6 +29,7 @@
     "withoutDiscont": 0,
     "category": "Gravel",
     "manufactureDate":2022,
+    "qntSold":2,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -51,6 +53,7 @@
     "withoutDiscont": 1240.00,
     "category": "City & Hybrid",
     "manufactureDate":2022,
+    "qntSold":5,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -74,6 +77,7 @@
     "withoutDiscont": 0,
     "category": "City & Hybrid",
     "manufactureDate":2025,
+    "qntSold":18,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -97,6 +101,7 @@
     "withoutDiscont": 1240.00,
     "category": "Mountain",
     "manufactureDate":2023,
+    "qntSold":1,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -119,6 +124,7 @@
     "withoutDiscont": 0,
     "category": "Road",
     "manufactureDate":2024,
+    "qntSold":1,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -141,6 +147,7 @@
     "withoutDiscont": 0,
     "category": "Gravel",
     "manufactureDate":2022,
+    "qntSold":0,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -163,6 +170,7 @@
     "withoutDiscont": 0,
     "category": "Mountain",
     "manufactureDate":2025,
+    "qntSold":3,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -186,6 +194,7 @@
     "withoutDiscont": 1390.00,
     "category": "Mountain",
     "manufactureDate":2021,
+    "qntSold":7,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -209,6 +218,7 @@
     "withoutDiscont": 0,
     "category": "Road",
     "manufactureDate":2023,
+    "qntSold":4,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -232,6 +242,7 @@
     "withoutDiscont": 0,
     "category": "Gravel",
     "manufactureDate":2024,
+    "qntSold":15,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -255,6 +266,7 @@
     "withoutDiscont": 0,
     "category": "Road",
     "manufactureDate":2025,
+    "qntSold":10,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
