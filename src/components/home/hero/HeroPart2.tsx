@@ -4,7 +4,7 @@ import FloatingImage from "./FloatingImage";
 const HeroPart2 = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center pt-20 pb-8">
-      <div className="flex flex-col lg:flex-row items-center lg:items-stretch w-full max-w-[1160px]">
+      <div className="flex flex-col lg:flex-row items-center lg:items-stretch w-full max-w-[1160px] px-4">
         <div className="flex items-center lg:items-stretch flex-col w-1/2 lg:pr-14 lg:mt-24">
           <div className="flex flex-col items-center lg:items-stretch relative">
             <div className="lg:absolute lg:-top-[308px] lg:-left-[8px] lg:right-96 w-[318px] sm:w-[450px]">
