@@ -11,12 +11,12 @@ const HeroPart1 = () => {
     "Shimano SLX, 10-51T",
   ];
   return (
-    <div className="relative w-full h-full lg:h-[calc(100vh-72px)] bg-[url('/img/bike.jpg')] bg-cover bg-left flex items-center justify-center">
+    <div className="relative w-full h-full lg:h-[calc(100vh-72px)] bg-[url('/img/hero/bike.jpg')] bg-cover bg-left flex items-center justify-center">
       <div className="flex w-full max-w-[1160px]">
         <div className="hidden lg:block w-1/2 h-screen px- py-20">
           <Image
             alt="new offer"
-            src={"/img/offer.png"}
+            src={"/img/hero/offer.png"}
             width={150}
             height={150}
           />

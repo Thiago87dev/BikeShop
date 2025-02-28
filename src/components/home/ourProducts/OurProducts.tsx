@@ -18,7 +18,7 @@ const OurProducts = () => {
     fetchData();
   }, []);
   return (
-    <div className="relative flex flex-col bg-[url('/img/tireBike.jpg')] bg-cover bg-center ">
+    <div className="relative flex flex-col bg-[url('/img/products/tireBike.jpg')] bg-cover bg-center ">
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="relative flex flex-col items-center mt-20 mb-10 text-white">
         <h2 className="text-red-500 font-bold text-xl">Our Products</h2>

@@ -6,7 +6,7 @@ import { AiOutlinePercentage } from "react-icons/ai";
 
 const BestOffer = () => {
   return (
-    <div className=" flex justify-center">
+    <div className=" flex justify-center bg-[#f7f7f7]">
       <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-between w-full max-w-[1160px] my-20">
         <div className="flex flex-col lg:flex-row items-center lg:items-stretch">
           <div className="hidden lg:block">
