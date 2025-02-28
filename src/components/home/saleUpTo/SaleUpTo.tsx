@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BikeName from "../hero/BikeName";
+import Timer from "./Timer";
 
 const SaleUpTo = () => {
   const bikeNames = [
@@ -28,6 +29,9 @@ const SaleUpTo = () => {
             height={120}
             className="absolute top-0 left-0"
           />
+          <div className="absolute -bottom-32 left-1/2 -translate-y-1/2 -translate-x-1/2">
+            <Timer />
+          </div>
         </div>
         <div className="w-[40%]">
           <div className="flex flex-col gap-5">
