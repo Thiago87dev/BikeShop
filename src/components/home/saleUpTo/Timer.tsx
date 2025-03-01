@@ -51,23 +51,23 @@ const Timer = () => {
   }, [targetDate]);
 
   return (
-    <div className="bg-red-600 flex justify-center w-[580px] py-6">
-      <div className="flex gap-12">
+    <div className="bg-red-600 flex justify-center w-full py-2 sm:py-6">
+      <div className="flex gap-6 sm:gap-12">
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-6xl">{timeLeft.days}</h2>
-          <p>DAYS</p>
+          <h2 className="font-bold text-3xl sm:text-6xl">{timeLeft.days}</h2>
+          <p className="text-sm sm:text-base">DAYS</p>
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-6xl">{timeLeft.hours}</h2>
-          <p>HRS</p>
+          <h2 className="font-bold text-3xl sm:text-6xl">{timeLeft.hours}</h2>
+          <p className="text-sm sm:text-base">HRS</p>
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-6xl">{timeLeft.minutes}</h2>
-          <p>MINS</p>
+          <h2 className="font-bold text-3xl sm:text-6xl">{timeLeft.minutes}</h2>
+          <p className="text-sm sm:text-base">MINS</p>
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="font-bold text-6xl">{timeLeft.seconds}</h2>
-          <p>SECS</p>
+          <h2 className="font-bold text-3xl sm:text-6xl">{timeLeft.seconds}</h2>
+          <p className="text-sm sm:text-base">SECS</p>
         </div>
       </div>
     </div>
