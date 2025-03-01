@@ -9,14 +9,31 @@ export interface ProductProp {
   description: string[];
   features: string[];
   img: string;
-  img300x300?: string
-  qntSold: number
+  img300x300?: string;
+  qntSold: number;
 }
 
 export interface ProductCardProps {
-  img300x300?: string
+  img300x300?: string;
   name: string;
   price: number;
   withoutDiscont: number;
-  qntSold: number
+  qntSold: number;
+}
+
+export interface PostProp {
+  id: number;
+  mainCategory: string;
+  secondaryCategory: string;
+  title: string;
+  author: string;
+  publishedAt: string;
+  popularity: number;
+  img: string;
+}
+
+export interface CardPostProp {
+  secondaryCategory: string;
+  title: string;
+  img: string;
 }

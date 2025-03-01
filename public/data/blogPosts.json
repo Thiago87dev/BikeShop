@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Bicycle Reviews",
+    "title":"The Best Bike Trainers for Indoor Rides",
+    "author":"Thiago Alves",
+    "publishedAt":"may 4, 2024",
+    "popularity":24,
+    "img":"/img/blog/alessio-soggetti-JQGGf6OuIdQ-unsplash1.jpg"
+  },
+  {
+    "id": 2,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Gear Reviews",
+    "title":"5 Reasons Why All Cyclist Should Practice Yoga",
+    "author":"Thiago Alves",
+    "publishedAt":"may 7, 2024",
+    "popularity":47,
+    "img":"/img/blog/velobar-vMSLp_DymMs-unsplash2.jpg"
+  },
+  {
+    "id": 3,
+    "mainCategory": "Stories",
+    "secondaryCategory":"Feature Stories",
+    "title":"8 Mistakes Cyclist Make When Using Power Meters",
+    "author":"Maria Silva",
+    "publishedAt":"may 12, 2024",
+    "popularity":35,
+    "img":"/img/blog/t-k-eZJiq4IVlwY-unsplash3.jpg"
+  },
+  {
+    "id": 4,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Bicycle Reviews",
+    "title":"The 4 Most Popular Cycling Analytics Software",
+    "author":"Thiago Alves",
+    "publishedAt":"may 16, 2024",
+    "popularity":30,
+    "img":"/img/blog/priscilla-du-preez-DPnL-8JDtmw-unsplash4.jpg"
+  },
+  {
+    "id": 5,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Gear Reviews",
+    "title":"10 Things You Didn’t Know about Power Meters",
+    "author":"Thiago Alves",
+    "publishedAt":"may 21, 2024",
+    "popularity":15,
+    "img":"/img/blog/quino-al-GPm3boXMtYQ-unsplash5.jpg"
+  },
+  {
+    "id": 6,
+    "mainCategory": "Stories",
+    "secondaryCategory":"Feature Stories",
+    "title":"Bicycle Safety – 35 Tips to Stay Safe on the Road",
+    "author":"Maria Silva",
+    "publishedAt":"may 25, 2024",
+    "popularity":10,
+    "img":"/img/blog/jeremy-bezanger-ONbyeYLb8xQ-unsplash6.jpg"
+  },
+  {
+    "id": 7,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Bicycle Reviews",
+    "title":"5 Easy Ways to Prevent Sunburn While Cycling",
+    "author":"Thiago Alves",
+    "publishedAt":"june 2, 2024",
+    "popularity":7,
+    "img":"/img/blog/julian-hochgesang-n6OdmJdBzp0-unsplash7.jpg"
+  },
+  {
+    "id": 8,
+    "mainCategory": "Stories",
+    "secondaryCategory":"Feature Stories",
+    "title":"5 Reasons to Use Bike Lights Day and Night",
+    "author":"Thiago Alves",
+    "publishedAt":"june 14, 2024",
+    "popularity":4,
+    "img":"/img/blog/coen-van-de-broek-OFyh9TpMyM8-unsplash8.jpg"
+  },
+  {
+    "id": 9,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Bicycle Reviews",
+    "title":"12 Tips and Tricks for Commuting to Work by Bike",
+    "author":"Thiago Alves",
+    "publishedAt":"june 19, 2024",
+    "popularity":2,
+    "img":"/img/blog/patrick-hendry-OZh_OBP_fao-unsplash9.jpg"
+  },
+  {
+    "id": 10,
+    "mainCategory": "Reviews",
+    "secondaryCategory":"Gear Reviews",
+    "title":"Should You Use A Compact Crankset?",
+    "author":"Thiago Alves",
+    "publishedAt":"june 27, 2024",
+    "popularity":1,
+    "img":"/img/blog/roman-mager-oHrodCLNnU8-unsplash10.jpg"
+  }
+]

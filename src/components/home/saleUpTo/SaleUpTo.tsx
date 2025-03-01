@@ -10,8 +10,8 @@ const SaleUpTo = () => {
   ];
   return (
     <div className="relative flex justify-center bg-[url('/img/saleUpTo/josh-nuttall.jpg')] bg-cover bg-center">
-      <div className="absolute inset-0 bg-black opacity-90"></div>
-      <div className="relative flex flex-col lg:flex-row items-center gap-20 text-white text-lg w-full max-w-[1160px] px-4 my-20">
+      <div className="absolute inset-0 bg-black opacity-75"></div>
+      <div className="relative flex flex-col lg:flex-row items-center gap-20 text-white text-lg w-full max-w-[1160px] px-4 mt-20 mb-40">
         <div className="relative w-full lg:w-[60%]">
           <div className="w-full lg:max-w-[660px] sm:h-[500px] overflow-hidden flex items-center justify-center">
             <Image

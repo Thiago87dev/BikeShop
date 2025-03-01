@@ -5,6 +5,7 @@ import ProductCard from "./ProductCard";
 
 const OurProducts = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -17,6 +18,7 @@ const OurProducts = () => {
     };
     fetchData();
   }, []);
+  
   return (
     <div className="relative flex flex-col bg-[url('/img/products/tireBike.jpg')] bg-cover bg-center ">
       <div className="absolute inset-0 bg-black opacity-70"></div>
