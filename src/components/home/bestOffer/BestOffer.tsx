@@ -58,7 +58,7 @@ const BestOffer = () => {
           <div className="flex flex-col gap-8 sm:flex-row sm:gap-10 justify-between h-[140px] text-left w-full">
             <div className="flex flex-col gap-8 sm:gap-0 justify-between w-full">
               <div className="flex items-center gap-4">
-                <div className="bg-red-500 flex items-center justify-center p-2 text-white">
+                <div className="bg-red-500 flex items-center justify-center p-2 text-white hover:bg-red-600 transition-colors duration-300">
                   <PiBoundingBoxBold size={25} />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -67,7 +67,7 @@ const BestOffer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="bg-red-500 flex items-center justify-center p-2 text-white">
+                <div className="bg-red-500 flex items-center justify-center p-2 text-white hover:bg-red-600 transition-colors duration-300">
                   <FaWeightHanging size={25} strokeWidth={20} />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ const BestOffer = () => {
             </div>
             <div className="flex flex-col gap-8 sm:gap-0  justify-between w-full">
               <div className="flex items-center gap-4">
-                <div className="bg-red-500 flex items-center justify-center p-2 text-white">
+                <div className="bg-red-500 flex items-center justify-center p-2 text-white hover:bg-red-600 transition-colors duration-300">
                   <AiOutlinePercentage size={25} />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -87,7 +87,7 @@ const BestOffer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4 ">
-                <div className="bg-red-500 flex items-center justify-center p-2 text-white">
+                <div className="bg-red-500 flex items-center justify-center p-2 text-white hover:bg-red-600 transition-colors duration-300">
                   <FaRuler size={25} strokeWidth={20} />
                 </div>
                 <div className="flex flex-col gap-2 ">

@@ -3,6 +3,7 @@ import Hero from "@/components/home/hero/Hero";
 import MostPopularPost from "@/components/home/mostPopularPost/MostPopularPost";
 import OurGallery from "@/components/home/ourGallery/OurGallery";
 import OurProducts from "@/components/home/ourProducts/OurProducts";
+import RedStrip from "@/components/home/redStrip/RedStrip";
 import SaleUpTo from "@/components/home/saleUpTo/SaleUpTo";
 import WhatTheySayAndOurGallery from "@/components/home/whatTheySay&ourGallery/WhatTheySayAndOurGallery";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <OurGallery/>
       <SaleUpTo/>
       <MostPopularPost/>
+      <RedStrip/>
     </div>
   );
 }
