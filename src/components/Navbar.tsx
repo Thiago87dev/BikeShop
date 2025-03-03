@@ -28,8 +28,8 @@ const Navbar = () => {
             <Image
               alt="logo"
               src={"/img/header-logo.png"}
-              width={140}
-              height={140}
+              width={160}
+              height={160}
               onClick={() => setActiveMenuItem("Home")}
             />
           </Link>
