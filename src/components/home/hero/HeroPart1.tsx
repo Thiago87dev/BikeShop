@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BikeName from "./BikeName";
+import Link from "next/link";
 
 const HeroPart1 = () => {
   const bikeNames = [
@@ -45,9 +46,11 @@ const HeroPart1 = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-14 mt-8">
               <p className="text-3xl font-bold">$1,920</p>
+              <Link href={'/shop'}>
               <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
                 Shop now
               </button>
+              </Link>
             </div>
           </div>
         </div>

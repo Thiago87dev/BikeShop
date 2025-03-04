@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FloatingImage from "./FloatingImage";
+import Link from "next/link";
 
 const HeroPart2 = () => {
   return (
@@ -35,9 +36,11 @@ const HeroPart2 = () => {
               <h3 className="font-bold text-2xl sm:text-xl italic">12.6 KG</h3>
             </div>
           </div>
-          <button className="bg-red-500 text-white font-semibold uppercase w-max px-8 mb-16 py-5 hover:bg-red-700 transition-colors duration-200">
-            Show More
-          </button>
+          <Link className="w-fit h-5" href={"/shop"}>
+            <button className="bg-red-500 text-white font-semibold uppercase w-max px-8 mb-16 py-5 hover:bg-red-700 transition-colors duration-200">
+              Show More
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col items-center lg:items-stretch w-full lg:w-1/2 ">
           <div className="flex flex-col items-center lg:items-stretch lg:relative lg:mt-40 px-4 lg:px-0">
@@ -45,9 +48,11 @@ const HeroPart2 = () => {
               <h2 className="text-white text-3xl font-bold">
                 The most popular bikes of the season!
               </h2>
-              <button className="uppercase text-white font-bold border-dotted border-white border-2 py-4 px-8">
-                shop now
-              </button>
+              <Link href={"/shop"}>
+                <button className="uppercase text-white font-bold border-dotted border-white border-2 py-4 px-8">
+                  shop now
+                </button>
+              </Link>
             </div>
             <div>
               <Image

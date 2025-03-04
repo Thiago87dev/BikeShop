@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BikeName from "../hero/BikeName";
 import Timer from "./Timer";
+import Link from "next/link";
 
 const SaleUpTo = () => {
   const bikeNames = [
@@ -36,7 +37,9 @@ const SaleUpTo = () => {
         <div className="w-full lg:w-[40%] pt-0 sm:pt-6 lg:pt-0">
           <div className="flex flex-col items-center lg:items-stretch gap-5">
             <h3 className="text-red-500 font-bold text-xl">SALE UP TO 30%</h3>
-            <h2 className="font-bold text-4xl text-center lg:text-left">Deal Of The Week</h2>
+            <h2 className="font-bold text-4xl text-center lg:text-left">
+              Deal Of The Week
+            </h2>
             <p className="px-4 sm:px-10 lg:px-0 text-center lg:text-left">
               Velit sed ullamcorper morbi tincidunt ornare massa eget. Senectus
               et netus et malesuada fames ac turpis egestas. Cras tincidunt
@@ -51,9 +54,11 @@ const SaleUpTo = () => {
             </ul>
             <div className="flex flex-col sm:flex-row items-center gap-5">
               <h2 className="italic font-bold text-3xl">$1,290</h2>
-              <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
-                Shop now
-              </button>
+              <Link href={"#"}>
+                <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
+                  Shop now
+                </button>
+              </Link>
             </div>
           </div>
         </div>

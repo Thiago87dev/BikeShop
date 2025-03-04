@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { ProductProp } from "@/types";
 import ProductCard from "./ProductCard";
+import Link from "next/link";
 
 const OurProducts = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
@@ -49,9 +50,11 @@ const OurProducts = () => {
           ))}
       </div>
       <div className="flex justify-center pt-12">
+        <Link href={'/shop'}>
         <button className="relative bg-red-500 text-white font-semibold uppercase w-max px-8 mb-16 py-5 hover:bg-red-700 transition-colors duration-200">
-          Show More
+          all products
         </button>
+        </Link>
       </div>
     </div>
   );

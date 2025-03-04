@@ -15,10 +15,10 @@ const Navbar = () => {
 
   const menuItens = [
     { label: "Home", path: "/" },
-    { label: "Shop", path: "/" },
-    { label: "About", path: "/" },
-    { label: "Contact", path: "/" },
-    { label: "Blog", path: "/" },
+    { label: "Shop", path: "/shop" },
+    { label: "About", path: "/about" },
+    { label: "Contact", path: "/contact" },
+    { label: "Blog", path: "/blog" },
   ];
   return (
     <nav className="bg-[#f7f7f7] px-6 relative z-50">
