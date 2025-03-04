@@ -3,7 +3,7 @@ import FloatingBox from "./FloatingBox";
 const HappyCustomers = () => {
   return (
     <div className="bg-[#f7f7f7]">
-      <div className="relative w-full max-w-[1160px] mx-auto px-4 py-6 sm:py-16">
+      <div className="relative w-full max-w-[1240px] mx-auto px-4 py-6 sm:py-16">
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 lg:gap-12">
           <div className="flex flex-col items-center lg:items-stretch gap-5 w-full sm:w-1/2 lg:w-auto  lg:pr-12 sm:border-r-[1px] border-red-500 border-solid">
             <h4 className="font-bold italic text-3xl sm:text-4xl text-red-500">153,280</h4>

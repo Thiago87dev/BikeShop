@@ -30,7 +30,7 @@ const OurGallery = () => {
   ];
   return (
     <div className="bg-[#f7f7f7] flex justify-center ">
-      <div className="flex flex-col gap-14 items-center w-full max-w-[1160px] my-20">
+      <div className="flex flex-col gap-14 items-center w-full max-w-[1240px] my-20">
         <div className="flex flex-col items-center gap-7 w-full sm:w-4/5 md:w-[400px] px-4 lg:px-0">
           <h3 className="text-red-500 font-bold text-xl">Our Gallery</h3>
           <h2 className="font-bold text-3xl sm:text-4xl text-center">

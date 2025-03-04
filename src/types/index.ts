@@ -9,16 +9,24 @@ export interface ProductProp {
   description: string[];
   features: string[];
   img: string;
-  img300x300?: string;
+  img300x300: string;
   qntSold: number;
+  inHome?: boolean
 }
 
 export interface ProductCardProps {
-  img300x300?: string;
+  img300x300: string;
   name: string;
   price: number;
   withoutDiscont: number;
   qntSold: number;
+  inHome?: boolean
+}
+
+export interface ProductCard2Props {
+  img300x300: string;
+  name: string;
+  price: number;
 }
 
 export interface PostProp {

@@ -13,7 +13,7 @@ const HeroPart1 = () => {
   ];
   return (
     <div className="relative w-full h-full lg:h-[calc(100vh-72px)] bg-[url('/img/hero/bike.jpg')] bg-cover bg-left flex items-center justify-center">
-      <div className="flex w-full max-w-[1160px]">
+      <div className="flex w-full max-w-[1240px]">
         <div className="hidden lg:block w-1/2 h-screen px- py-20">
           <Image
             alt="new offer"

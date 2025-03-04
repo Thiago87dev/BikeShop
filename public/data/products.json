@@ -20,7 +20,9 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-1.jpg"
+    "img": "/img/products/product-1.jpg",
+    "img300x300":"/img/products/product-1-300x300.jpg",
+    "inHome": false
   },
   {
     "id": 2,
@@ -44,7 +46,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-2.jpg",
-    "img300x300":"/img/products/product-2-300x300.jpg"
+    "img300x300":"/img/products/product-2-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 3,
@@ -68,7 +71,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-3.jpg",
-    "img300x300":"/img/products/product-3-300x300.jpg"
+    "img300x300":"/img/products/product-3-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 4,
@@ -92,7 +96,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-4.jpg",
-    "img300x300":"/img/products/product-4-300x300.jpg"
+    "img300x300":"/img/products/product-4-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 5,
@@ -115,7 +120,9 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-5.jpg"
+    "img": "/img/products/product-5.jpg",
+    "img300x300":"/img/products/product-5-300x300.jpg",
+    "inHome": false
   },
   {
     "id": 6,
@@ -138,7 +145,9 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-6.jpg"
+    "img": "/img/products/product-6.jpg",
+    "img300x300":"/img/products/product-6-300x300.jpg",
+    "inHome": false
   },
   {
     "id": 7,
@@ -161,7 +170,9 @@
       "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
-    "img": "/img/products/product-7.jpg"
+    "img": "/img/products/product-7.jpg",
+    "img300x300":"/img/products/product-7-300x300.jpg",
+    "inHome": false
   },
   {
     "id": 8,
@@ -185,7 +196,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-8.jpg",
-    "img300x300":"/img/products/product-8-300x300.jpg"
+    "img300x300":"/img/products/product-8-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 9,
@@ -209,7 +221,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-9.jpg",
-    "img300x300":"/img/products/product-9-300x300.jpg"
+    "img300x300":"/img/products/product-9-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 10,
@@ -233,7 +246,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-10.jpg",
-    "img300x300":"/img/products/product-10-300x300.jpg"
+    "img300x300":"/img/products/product-10-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 11,
@@ -257,7 +271,8 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-11.jpg",
-    "img300x300":"/img/products/product-11-300x300.jpg"
+    "img300x300":"/img/products/product-11-300x300.jpg",
+    "inHome": true
   },
   {
     "id": 12,
@@ -281,6 +296,7 @@
       "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
     ],
     "img": "/img/products/product-12.jpg",
-    "img300x300":"/img/products/product-12-300x300.jpg"
+    "img300x300":"/img/products/product-12-300x300.jpg",
+    "inHome": true
   }
 ]

@@ -6,7 +6,7 @@ const WhatTheySay = () => {
     <div className="mt-40 sm:mt-0">
       <div className="relative flex flex-col bg-[url('/img/whatTheySay/bg-image-blue-bike.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-[#a90a0a] opacity-90"></div>
-        <div className="relative flex flex-col items-center lg:items-stretch text-center lg:text-left w-full max-w-[1160px] mx-auto px-4">
+        <div className="relative flex flex-col items-center lg:items-stretch text-center lg:text-left w-full max-w-[1240px] mx-auto px-4">
           <div className="lg:w-[638px]">
             <h3 className="uppercase text-white font-bold text-xl mt-16 mb-8">
               what they say about us

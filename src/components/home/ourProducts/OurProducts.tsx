@@ -33,9 +33,9 @@ const OurProducts = () => {
           tellus, luctus nec ullamcorper mattis.
         </p>
       </div>
-      <div className="relative flex flex-wrap justify-center text-black z-10 w-full max-w-[1160px] mx-auto gap-8 px-4 lg:px-0">
+      <div className="relative flex flex-wrap justify-center text-black z-10 w-full max-w-[1240px] mx-auto gap-8 px-4 lg:px-0">
         {products
-          .filter((item) => item.img300x300)
+          .filter((item) => item.inHome)
           .sort((a, b) => b.qntSold - a.qntSold)
           .map((item) => (
             <div key={item.id}>

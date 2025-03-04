@@ -61,7 +61,7 @@ const Footer = () => {
 
   return (
     <div className="flex justify-center bg-black text-white">
-      <div className="flex flex-col items-center lg:items-stretch w-full max-w-[1160px] pt-20 pb-10 px-4">
+      <div className="flex flex-col items-center lg:items-stretch w-full max-w-[1240px] pt-20 pb-10 px-4">
         <div className="flex flex-col lg:flex-row gap-20 mb-20">
           <div className="flex flex-col gap-5 w-[90vw] sm:w-[60vw] lg:w-[400px]">
             <div className="mx-auto lg:mx-0">

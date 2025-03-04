@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="bg-[#f7f7f7] px-6 relative z-50">
-      <div className="flex items-center justify-between mx-auto w-full max-w-[1160px] py-5">
+      <div className="flex items-center justify-between mx-auto w-full max-w-[1240px] py-5">
         <div>
           <Link href={"/"}>
             <Image

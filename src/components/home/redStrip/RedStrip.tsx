@@ -6,7 +6,7 @@ const RedStrip = () => {
   return (
     <div className="relative flex justify-center bg-[url('/img/blog/julian-hochgesang-n6OdmJdBzp0-unsplash7.jpg')] bg-center bg-cover">
       <div className="absolute inset-0 bg-[#a90a0a] opacity-90"></div>
-      <div className="relative flex flex-col items-center gap-12 lg:gap-0 lg:items-stretch lg:flex-row justify-between w-full max-w-[1160px] text-white py-16 px-4">
+      <div className="relative flex flex-col items-center gap-12 lg:gap-0 lg:items-stretch lg:flex-row justify-between w-full max-w-[1240px] text-white py-16 px-4">
         <div>
           <div className="flex items-center gap-5">
             <div>
