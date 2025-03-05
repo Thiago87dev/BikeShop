@@ -1,13 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
   const [activeSandwichMenu, setActiveSandwichMenu] = useState(false);
+
+  const pathname = usePathname();
 
   const handleToggleMenu = () => {
     setActiveSandwichMenu(!activeSandwichMenu);
@@ -20,6 +23,21 @@ const Navbar = () => {
     { label: "Contact", path: "/contact" },
     { label: "Blog", path: "/blog" },
   ];
+
+  useEffect(() => {
+    if (pathname.includes("/shop")) {
+      setActiveMenuItem("Shop");
+    } else if (pathname.includes("/about")) {
+      setActiveMenuItem("About");
+    } else if (pathname.includes("/contact")) {
+      setActiveMenuItem("Contact");
+    } else if (pathname.includes("/blog")) {
+      setActiveMenuItem("Blog");
+    } else {
+      setActiveMenuItem("Home");
+    }
+  }, [pathname]);
+
   return (
     <nav className="bg-[#f7f7f7] px-6 relative z-50">
       <div className="flex items-center justify-between mx-auto w-full max-w-[1240px] py-5">
@@ -56,7 +74,7 @@ const Navbar = () => {
                 key={item.label}
                 onClick={() => {
                   setActiveMenuItem(item.label);
-                  setActiveSandwichMenu(false)
+                  setActiveSandwichMenu(false);
                 }}
               >
                 <Link
