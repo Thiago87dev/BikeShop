@@ -14,7 +14,7 @@ export interface ProductProp {
   inHome?: boolean
 }
 
-export interface ProductCardProps {
+export interface ProductCardHomeProps {
   img300x300: string;
   name: string;
   price: number;
@@ -23,10 +23,19 @@ export interface ProductCardProps {
   inHome?: boolean
 }
 
-export interface ProductCard2Props {
+export interface ProductCardProps {
   img300x300: string;
   name: string;
   price: number;
+  withoutDiscont: number;
+}
+
+export interface CardProductsHorizontalProps {
+  img300x300: string;
+  name: string;
+  price: number;
+  withoutDiscont: number;
+  brief: string
 }
 
 export interface PostProp {

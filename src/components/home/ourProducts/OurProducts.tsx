@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { ProductProp } from "@/types";
-import ProductCard from "./ProductCard";
+import ProductCardHome from "./ProductCardHome";
 import Link from "next/link";
 
 const OurProducts = () => {
@@ -39,7 +39,7 @@ const OurProducts = () => {
           .sort((a, b) => b.qntSold - a.qntSold)
           .map((item) => (
             <div key={item.id}>
-              <ProductCard
+              <ProductCardHome
                 name={item.name}
                 price={item.price}
                 withoutDiscont={item.withoutDiscont}

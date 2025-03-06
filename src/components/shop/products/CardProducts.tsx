@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { ProductCard2Props } from "@/types";
+import { ProductCardProps } from "@/types";
 import Link from "next/link";
 
-const CardProducts = ({ img300x300, name, price }: ProductCard2Props) => {
+const CardProducts = ({ img300x300, name, price, withoutDiscont }: ProductCardProps) => {
   return (
     <div className="relative group flex flex-col items-center w-full ">
-      <div>
+      <div className="relative">
         <Link href={"#"}>
           <Image
             alt="teste"
@@ -16,6 +16,11 @@ const CardProducts = ({ img300x300, name, price }: ProductCard2Props) => {
             className="w-[387px]"
           />
         </Link>
+        {withoutDiscont > 0 && (
+          <div className="absolute top-1 right-1 bg-red-600 text-white uppercase py-1 px-3 font-semibold rounded-[4px]">
+            sale!
+          </div>
+        )}
       </div>
 
       <div className="absolute px-5 pt-5 bg-white flex flex-col gap-2 -bottom-0 w-[368px] rounded-md group-hover:bottom-12 transform duration-300">

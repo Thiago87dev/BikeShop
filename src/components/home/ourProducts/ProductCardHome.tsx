@@ -1,26 +1,31 @@
 import Image from "next/image";
-import { ProductCardProps } from "@/types";
+import { ProductCardHomeProps } from "@/types";
 import Link from "next/link";
 
-const ProductCard = ({
+const ProductCardHome = ({
   img300x300,
   name,
   price,
   withoutDiscont,
-}: ProductCardProps) => {
+}: ProductCardHomeProps) => {
   return (
     <div className=" w-[264px] h-[360px] bg-white">
-      <div>
+      <div className="relative">
         {img300x300 && (
           <Link href={"#"}>
             <Image
-              alt="img teste"
+              alt="bicicleta"
               src={img300x300}
               width={288}
               height={300}
               className="w-[264px]"
             />
           </Link>
+        )}
+        {withoutDiscont > 0 && (
+          <div className="absolute top-1 right-1 bg-white uppercase py-1 px-3 font-semibold rounded-[4px] border-[1px] border-solid border-black">
+            sale
+          </div>
         )}
       </div>
       <div className="flex flex-col gap-2 py-4 h-[92px]">
@@ -46,4 +51,4 @@ const ProductCard = ({
   );
 };
 
-export default ProductCard;
+export default ProductCardHome;

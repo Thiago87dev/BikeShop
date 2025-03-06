@@ -4,6 +4,7 @@ import CardProducts from "./CardProducts";
 import { ProductProp } from "@/types";
 import { PiGridNineFill } from "react-icons/pi";
 import { PiListBulletsBold } from "react-icons/pi";
+import CardProductsHorizontal from "./CardProductsHorizontal";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
@@ -28,7 +29,7 @@ const Products = () => {
         <div className="flex justify-between  py-10">
           <p>Showing 1–9 of 12 results</p>
           <div className="flex gap-[6px]">
-            <select className="w-48 h-8 border-b-[1px] border-solid border-black outline-none ">
+            <select className="w-48 h-8 border-b-[1px]  border-solid font-bold border-black outline-none ">
               <option>teste</option>
               <option>teste</option>
               <option>teste</option>
@@ -55,17 +56,34 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between">
-          {products.map((item) => (
-            <div className="w-[387px]" key={item.id}>
-              <CardProducts
-                img300x300={item.img300x300}
-                name={item.name}
-                price={item.price}
-              />
-            </div>
-          ))}
-        </div>
+        {switchSelected === "grid" ? (
+          <div className="flex flex-wrap justify-between">
+            {products.map((item) => (
+              <div className="w-[387px]" key={item.id}>
+                <CardProducts
+                  img300x300={item.img300x300}
+                  name={item.name}
+                  price={item.price}
+                  withoutDiscont={item.withoutDiscont}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-col gap-10">
+            {products.map((item) => (
+              <div key={item.id}>
+                <CardProductsHorizontal
+                  brief={item.brief}
+                  img300x300={item.img300x300}
+                  name={item.name}
+                  price={item.price}
+                  withoutDiscont={item.withoutDiscont}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
