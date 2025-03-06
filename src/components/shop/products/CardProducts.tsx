@@ -3,7 +3,12 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { ProductCardProps } from "@/types";
 import Link from "next/link";
 
-const CardProducts = ({ img300x300, name, price, withoutDiscont }: ProductCardProps) => {
+const CardProducts = ({
+  img300x300,
+  name,
+  price,
+  withoutDiscont,
+}: ProductCardProps) => {
   return (
     <div className="relative group flex flex-col items-center w-full ">
       <div className="relative">
@@ -27,7 +32,18 @@ const CardProducts = ({ img300x300, name, price, withoutDiscont }: ProductCardPr
         <Link className="w-fit" href={"#"}>
           <h2 className="font-semibold w-fit text-2xl">{name}</h2>
         </Link>
-        <p>${price}.00</p>
+        <div>
+          {withoutDiscont > 0 ? (
+            <div className="flex gap-2">
+              <p className="line-through">${withoutDiscont}.00</p>
+              <p className="font-bold">${price}.00</p>
+            </div>
+          ) : (
+            <div>
+              <p>${price}.00</p>
+            </div>
+          )}
+        </div>
         <div className="flex items-center gap-2">
           <h2 className="font-bold uppercase cursor-pointer">add to cart</h2>
           <FaLongArrowAltRight className="cursor-pointer" size={22} />

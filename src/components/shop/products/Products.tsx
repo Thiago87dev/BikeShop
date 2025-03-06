@@ -9,6 +9,7 @@ import CardProductsHorizontal from "./CardProductsHorizontal";
 const Products = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
   const [switchSelected, setSwitchSelected] = useState("grid");
+  const [selectedOption, setSelectedOption] = useState("default");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,16 +24,26 @@ const Products = () => {
     fetchData();
   }, []);
 
+  const handleOptionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedOption(e.target.value);
+  };
+
   return (
     <div className="flex justify-center px-4">
       <div className="w-full max-w-[1240px] py-10">
         <div className="flex justify-between  py-10">
           <p>Showing 1–9 of 12 results</p>
           <div className="flex gap-[6px]">
-            <select className="w-48 h-8 border-b-[1px]  border-solid font-bold border-black outline-none ">
-              <option>teste</option>
-              <option>teste</option>
-              <option>teste</option>
+            <select
+              value={selectedOption}
+              onChange={handleOptionChange}
+              className="w-52 h-8 border-b-[1px]  border-solid font-semibold border-black outline-none "
+            >
+              <option value="default">Default sorting</option>
+              <option value="popularity">Sort by popularity</option>
+              <option value="latest">Sort by latest</option>
+              <option value="lowToHigh">Sort by price:low to high</option>
+              <option value="highToLow">Sort by price:high to low</option>
             </select>
             <div
               onClick={() => setSwitchSelected("grid")}
@@ -56,34 +67,53 @@ const Products = () => {
             </div>
           </div>
         </div>
-        {switchSelected === "grid" ? (
-          <div className="flex flex-wrap justify-between">
-            {products.map((item) => (
-              <div className="w-[387px]" key={item.id}>
-                <CardProducts
-                  img300x300={item.img300x300}
-                  name={item.name}
-                  price={item.price}
-                  withoutDiscont={item.withoutDiscont}
-                />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="flex flex-col gap-10">
-            {products.map((item) => (
-              <div key={item.id}>
-                <CardProductsHorizontal
-                  brief={item.brief}
-                  img300x300={item.img300x300}
-                  name={item.name}
-                  price={item.price}
-                  withoutDiscont={item.withoutDiscont}
-                />
-              </div>
-            ))}
-          </div>
-        )}
+        <div className={`${switchSelected === 'grid' ?'flex flex-wrap justify-between':'flex flex-col gap-10'}`}>
+          {products
+            .sort((a, b) => {
+              if (selectedOption === "popularity") {
+                return b.qntSold - a.qntSold;
+              }
+              if (selectedOption === "latest") {
+                return b.manufactureDate - a.manufactureDate;
+              }
+              if (selectedOption === "lowToHigh") {
+                return a.price - b.price;
+              }
+              if (selectedOption === "highToLow") {
+                return b.price - a.price;
+              }
+              if (selectedOption === "default") {
+                return a.name.localeCompare(b.name);
+              }
+              return 0;
+            })
+            .map((item) => {
+              return (
+                <div key={item.id}>
+                  {switchSelected === "grid" ? (
+                    <div className="w-[387px]">
+                      <CardProducts
+                        img300x300={item.img300x300}
+                        name={item.name}
+                        price={item.price}
+                        withoutDiscont={item.withoutDiscont}
+                      />
+                    </div>
+                  ) : (
+                    <div>
+                      <CardProductsHorizontal
+                        brief={item.brief}
+                        img300x300={item.img300x300}
+                        name={item.name}
+                        price={item.price}
+                        withoutDiscont={item.withoutDiscont}
+                      />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
