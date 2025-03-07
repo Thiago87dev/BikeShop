@@ -17,7 +17,7 @@ const Footer = () => {
     { label: "Mountain Bike", path: "#" },
     { label: "Gravel Bikes", path: "#" },
     { label: "Road Bike", path: "#" },
-    { label: "Cyclocross", path: "#" },
+    { label: "City & Hybrid", path: "#" },
     { label: "Kids’ Bikes", path: "#" },
   ];
 
