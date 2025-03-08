@@ -11,7 +11,7 @@ const CardProductsHorizontal = ({
   brief,
 }: CardProductsHorizontalProps) => {
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center pb-6 md:pb-0 gap-8">
       <div className="relative">
         <Link href={"#"}>
           <Image alt="bicicleta" src={img300x300} width={414} height={414} />

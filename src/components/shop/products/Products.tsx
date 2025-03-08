@@ -1,13 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import CardProducts from "./CardProducts";
+import { useEffect, useState } from "react";
 import { ProductProp } from "@/types";
 import { PiGridNineFill } from "react-icons/pi";
 import { PiListBulletsBold } from "react-icons/pi";
-import CardProductsHorizontal from "./CardProductsHorizontal";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
+import CardProducts from "./CardProducts";
+import CardProductsHorizontal from "./CardProductsHorizontal";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
@@ -90,32 +90,32 @@ const Products = () => {
   return (
     <div>
       <div className="flex items-center justify-center bg-[#3c3638]">
-      <div className="flex flex-col items-center justify-center gap-4 h-[200px] text-white">
-        <h1 className="text-[50px] font-bold">{selectedCategory}</h1>
-        {selectedCategory === "Shop" ? (
-          <p>
-            <Link href={"/"}>
-              <span className="underline">Home</span>
-            </Link>{" "}
-            / Shop
-          </p>
-        ) : (
-          <p>
-            <Link href={"/"}>
-              <span className="underline">Home</span>
-            </Link>{" "}
-            /{" "}
-            <Link onClick={()=>setSelectedCategory('Shop')} href={"/shop"}>
-              <span className="underline">Shop</span>
-            </Link>{" "}
-            / {selectedCategory}
-          </p>
-        )}
+        <div className="flex flex-col items-center justify-center gap-4 h-[200px] text-white">
+          <h1 className="text-[50px] font-bold">{selectedCategory}</h1>
+          {selectedCategory === "Shop" ? (
+            <p>
+              <Link href={"/"}>
+                <span className="underline">Home</span>
+              </Link>{" "}
+              / Shop
+            </p>
+          ) : (
+            <p>
+              <Link href={"/"}>
+                <span className="underline">Home</span>
+              </Link>{" "}
+              /{" "}
+              <Link onClick={() => setSelectedCategory("Shop")} href={"/shop"}>
+                <span className="underline">Shop</span>
+              </Link>{" "}
+              / {selectedCategory}
+            </p>
+          )}
+        </div>
       </div>
-    </div>
       <div className="flex justify-center px-4">
-        <div className="w-full max-w-[1240px] py-10">
-          <div className="flex justify-between  py-10">
+        <div className="w-full max-w-[1240px] py-4 md:py-10">
+          <div className="flex flex-col gap-4 md:gap-0 md:flex-row justify-between py-10">
             {sortedProducts.length <= 0 ? (
               <p className="text-lg">Showing 0 of 0 results</p>
             ) : (
@@ -126,7 +126,7 @@ const Products = () => {
               </p>
             )}
 
-            <div className="flex gap-[6px]">
+            <div className="flex flex-col md:flex-row  gap-[6px]">
               <select
                 value={selectedCategory}
                 onChange={handleCategorychange}
@@ -150,32 +150,34 @@ const Products = () => {
                 <option value="lowToHigh">Sort by price:low to high</option>
                 <option value="highToLow">Sort by price:high to low</option>
               </select>
-              <div
-                onClick={() => setSwitchSelected("grid")}
-                className={`flex items-center justify-center ${
-                  switchSelected === "grid"
-                    ? "border-2 border-solid border-black"
-                    : "border-[1px] border-solid border-gray-400 hover:border-black"
-                }  cursor-pointer w-8 h-8`}
-              >
-                <PiGridNineFill size={20} />
-              </div>
-              <div
-                onClick={() => setSwitchSelected("list")}
-                className={`flex items-center justify-center ${
-                  switchSelected === "list"
-                    ? "border-2 border-solid border-black"
-                    : "border-[1px] border-solid border-gray-400 hover:border-black"
-                }  cursor-pointer w-8 h-8`}
-              >
-                <PiListBulletsBold size={20} />
+              <div className="hidden sm:flex gap-1">
+                <div
+                  onClick={() => setSwitchSelected("grid")}
+                  className={`flex items-center justify-center ${
+                    switchSelected === "grid"
+                      ? "border-2 border-solid border-black"
+                      : "border-[1px] border-solid border-gray-400 hover:border-black"
+                  }  cursor-pointer w-8 h-8`}
+                >
+                  <PiGridNineFill size={20} />
+                </div>
+                <div
+                  onClick={() => setSwitchSelected("list")}
+                  className={`flex items-center justify-center ${
+                    switchSelected === "list"
+                      ? "border-2 border-solid border-black"
+                      : "border-[1px] border-solid border-gray-400 hover:border-black"
+                  }  cursor-pointer w-8 h-8`}
+                >
+                  <PiListBulletsBold size={20} />
+                </div>
               </div>
             </div>
           </div>
           <div
             className={`${
               switchSelected === "grid"
-                ? "flex flex-wrap justify-between"
+                ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-11"
                 : "flex flex-col gap-10"
             }`}
           >
@@ -183,7 +185,7 @@ const Products = () => {
               return (
                 <div key={item.id}>
                   {switchSelected === "grid" ? (
-                    <div className="w-[387px]">
+                    <div className="w-full">
                       <CardProducts
                         img300x300={item.img300x300}
                         name={item.name}
@@ -193,20 +195,32 @@ const Products = () => {
                     </div>
                   ) : (
                     <div>
-                      <CardProductsHorizontal
-                        brief={item.brief}
+                      <div className="hidden sm:flex">
+                        <CardProductsHorizontal
+                          brief={item.brief}
+                          img300x300={item.img300x300}
+                          name={item.name}
+                          price={item.price}
+                          withoutDiscont={item.withoutDiscont}
+                        />
+                      </div>
+                      <div className="flex sm:hidden w-full">
+                      <CardProducts
                         img300x300={item.img300x300}
                         name={item.name}
                         price={item.price}
                         withoutDiscont={item.withoutDiscont}
                       />
                     </div>
+                    </div>
                   )}
                 </div>
               );
             })}
             {sortedProducts.length <= 0 && (
-              <h2 className="text-4xl font-bold mx-auto py-20">Sorry, but this category does not have any items.</h2>
+              <h2 className="text-4xl font-bold mx-auto py-20">
+                Sorry, but this category does not have any items.
+              </h2>
             )}
           </div>
           {/* pagination */}
@@ -218,7 +232,7 @@ const Products = () => {
             <button
               onClick={() => {
                 setCurrentPage((prev) => Math.max(prev - 1, 1));
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 300, behavior:'instant'});
               }}
               className={`${
                 currentPage === 1
@@ -234,7 +248,7 @@ const Products = () => {
                 key={index}
                 onClick={() => {
                   setCurrentPage(index + 1);
-                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  window.scrollTo({ top: 300, behavior:'instant'});
                 }}
                 aria-disabled={currentPage === index + 1}
                 style={{
@@ -251,7 +265,7 @@ const Products = () => {
             <button
               onClick={() => {
                 setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 300, behavior:'instant'});
               }}
               className={`${
                 currentPage === totalPages
