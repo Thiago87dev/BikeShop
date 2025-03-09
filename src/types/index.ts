@@ -28,6 +28,7 @@ export interface ProductCardProps {
   name: string;
   price: number;
   withoutDiscont: number;
+  id:number
 }
 
 export interface CardProductsHorizontalProps {
@@ -36,6 +37,7 @@ export interface CardProductsHorizontalProps {
   price: number;
   withoutDiscont: number;
   brief: string
+  id:number
 }
 
 export interface PostProp {
@@ -53,4 +55,13 @@ export interface CardPostProp {
   secondaryCategory: string;
   title: string;
   img: string;
+}
+
+export interface ProductDetailProps {
+  img: string;
+  name: string;
+  price: number;
+  withoutDiscont: number;
+  brief: string
+  category: string
 }

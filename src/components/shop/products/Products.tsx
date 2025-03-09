@@ -191,6 +191,7 @@ const Products = () => {
                         name={item.name}
                         price={item.price}
                         withoutDiscont={item.withoutDiscont}
+                        id={item.id}
                       />
                     </div>
                   ) : (
@@ -202,6 +203,7 @@ const Products = () => {
                           name={item.name}
                           price={item.price}
                           withoutDiscont={item.withoutDiscont}
+                          id={item.id}
                         />
                       </div>
                       <div className="flex sm:hidden w-full">
@@ -210,6 +212,7 @@ const Products = () => {
                         name={item.name}
                         price={item.price}
                         withoutDiscont={item.withoutDiscont}
+                        id={item.id}
                       />
                     </div>
                     </div>

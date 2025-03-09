@@ -9,11 +9,12 @@ const CardProductsHorizontal = ({
   price,
   withoutDiscont,
   brief,
+  id,
 }: CardProductsHorizontalProps) => {
   return (
     <div className="flex items-center pb-6 md:pb-0 gap-8">
       <div className="relative">
-        <Link href={"#"}>
+        <Link href={`/shop/product/${id}`}>
           <Image alt="bicicleta" src={img300x300} width={414} height={414} />
         </Link>
         {withoutDiscont > 0 && (

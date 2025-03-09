@@ -8,11 +8,12 @@ const CardProducts = ({
   name,
   price,
   withoutDiscont,
+  id
 }: ProductCardProps) => {
   return (
     <div className="group flex flex-col items-center h-full w-full ">
       <div className="relative w-full pb-28">
-        <Link href={"#"}>
+        <Link href={`/shop/product/${id}`}>
           <Image
             alt="Bicicleta"
             src={img300x300}
