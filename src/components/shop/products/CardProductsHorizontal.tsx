@@ -24,7 +24,7 @@ const CardProductsHorizontal = ({
         )}
       </div>
       <div className="flex flex-col gap-4">
-        <Link className="w-fit" href={"#"}>
+        <Link className="w-fit" href={`/shop/product/${id}`}>
           <h2 className="font-semibold text-2xl">{name}</h2>
         </Link>
         <div>

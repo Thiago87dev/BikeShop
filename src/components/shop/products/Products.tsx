@@ -8,6 +8,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
 import CardProducts from "./CardProducts";
 import CardProductsHorizontal from "./CardProductsHorizontal";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductProp[]>([]);
@@ -16,6 +17,10 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Shop");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const categoryFromUrl = searchParams.get("c");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,6 +34,14 @@ const Products = () => {
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (categoryFromUrl) {
+      setSelectedCategory(categoryFromUrl);
+    }
+    const newUrl = "/shop";
+    router.replace(newUrl);
+  }, [categoryFromUrl, router]);
 
   const selectedCategoriesProducts = [...products].filter((item) => {
     if (selectedCategory === "Mountain") {
@@ -207,14 +220,14 @@ const Products = () => {
                         />
                       </div>
                       <div className="flex sm:hidden w-full">
-                      <CardProducts
-                        img300x300={item.img300x300}
-                        name={item.name}
-                        price={item.price}
-                        withoutDiscont={item.withoutDiscont}
-                        id={item.id}
-                      />
-                    </div>
+                        <CardProducts
+                          img300x300={item.img300x300}
+                          name={item.name}
+                          price={item.price}
+                          withoutDiscont={item.withoutDiscont}
+                          id={item.id}
+                        />
+                      </div>
                     </div>
                   )}
                 </div>
@@ -235,7 +248,7 @@ const Products = () => {
             <button
               onClick={() => {
                 setCurrentPage((prev) => Math.max(prev - 1, 1));
-                window.scrollTo({ top: 300, behavior:'instant'});
+                window.scrollTo({ top: 300, behavior: "instant" });
               }}
               className={`${
                 currentPage === 1
@@ -251,7 +264,7 @@ const Products = () => {
                 key={index}
                 onClick={() => {
                   setCurrentPage(index + 1);
-                  window.scrollTo({ top: 300, behavior:'instant'});
+                  window.scrollTo({ top: 300, behavior: "instant" });
                 }}
                 aria-disabled={currentPage === index + 1}
                 style={{
@@ -268,7 +281,7 @@ const Products = () => {
             <button
               onClick={() => {
                 setCurrentPage((prev) => Math.min(prev + 1, totalPages));
-                window.scrollTo({ top: 300, behavior:'instant'});
+                window.scrollTo({ top: 300, behavior: "instant" });
               }}
               className={`${
                 currentPage === totalPages

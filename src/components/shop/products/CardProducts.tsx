@@ -28,7 +28,7 @@ const CardProducts = ({
           )}
         </Link>
         <div className="absolute px-5 pt-5 flex flex-col bg-white gap-2 left-1/2 -translate-x-1/2 bottom-7 w-full md:w-[94%] rounded-md group-hover:bottom-10 transition-all duration-500">
-          <Link className="w-fit" href={"#"}>
+          <Link className="w-fit" href={`/shop/product/${id}`}>
             <h2 className="font-semibold  w-fit text-2xl ">{name}</h2>
           </Link>
           <div>

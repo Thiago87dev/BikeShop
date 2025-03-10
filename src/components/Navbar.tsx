@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const menuItens = [
     { label: "Home", path: "/" },
-    { label: "Shop", path: "/shop" },
+    { label: "Shop", path: "/shop?c=Shop" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
     { label: "Blog", path: "/blog" },
@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="bg-[#f7f7f7] px-6 relative z-50">
+    <nav className="bg-white px-6 relative z-50">
       <div className="flex items-center justify-between mx-auto w-full max-w-[1240px] py-5">
         <div>
           <Link href={"/"}>
@@ -118,10 +118,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center cursor-pointer">
-            <FiShoppingCart size={22} />
-            <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
-              0
-            </div>
+            <Link className="flex items-center" href={"/cart"}>
+              <FiShoppingCart size={22} />
+              <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
+                0
+              </div>
+            </Link>
           </div>
         </div>
       </div>
