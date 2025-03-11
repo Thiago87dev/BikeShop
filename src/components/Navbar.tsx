@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="bg-white px-6 relative z-50">
+    <nav className="bg-white px-6 relative z-30">
       <div className="flex items-center justify-between mx-auto w-full max-w-[1240px] py-5">
         <div>
           <Link href={"/"}>
