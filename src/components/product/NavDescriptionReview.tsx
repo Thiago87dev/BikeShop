@@ -2,10 +2,10 @@ import { useState } from "react";
 import Description from "./Description";
 
 interface NavDescriptionReviewProp {
-  id: string;
-}
+    id: string;
+  }
 
-const NavDescriptionReview = ({ id }: NavDescriptionReviewProp) => {
+const NavDescriptionReview = ({id}:NavDescriptionReviewProp) => {
   const [descriptionSelected, setDescriptionSelected] = useState(true);
 
   return (
@@ -31,7 +31,8 @@ const NavDescriptionReview = ({ id }: NavDescriptionReviewProp) => {
         </ul>
       </nav>
       <div className="bg-white w-full max-w-[1240px] ">
-        {descriptionSelected ? <Description id={id} /> : <h1></h1>}
+        {descriptionSelected ?( <Description id={id}/>):(<h1></h1>)}
+       
       </div>
     </div>
   );

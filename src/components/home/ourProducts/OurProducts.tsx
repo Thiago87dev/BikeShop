@@ -45,6 +45,7 @@ const OurProducts = () => {
                 withoutDiscont={item.withoutDiscont}
                 img300x300={item.img300x300}
                 qntSold={item.qntSold}
+                id={item.id}
               />
             </div>
           ))}

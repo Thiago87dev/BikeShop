@@ -21,6 +21,7 @@ export interface ProductCardHomeProps {
   withoutDiscont: number;
   qntSold: number;
   inHome?: boolean
+  id: number
 }
 
 export interface ProductCardProps {

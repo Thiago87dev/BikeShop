@@ -54,7 +54,7 @@ const SaleUpTo = () => {
             </ul>
             <div className="flex flex-col sm:flex-row items-center gap-5">
               <h2 className="italic font-bold text-3xl">$1,290</h2>
-              <Link href={"#"}>
+              <Link href={"/shop/product/1"}>
                 <button className="bg-red-600 py-4 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
                   Shop now
                 </button>

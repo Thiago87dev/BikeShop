@@ -7,12 +7,13 @@ const ProductCardHome = ({
   name,
   price,
   withoutDiscont,
+  id,
 }: ProductCardHomeProps) => {
   return (
     <div className=" w-[264px] h-[360px] bg-white">
       <div className="relative">
         {img300x300 && (
-          <Link href={"#"}>
+          <Link href={`/shop/product/${id}`}>
             <Image
               alt="bicicleta"
               src={img300x300}
@@ -30,7 +31,7 @@ const ProductCardHome = ({
       </div>
       <div className="flex flex-col gap-2 py-4 h-[92px]">
         <div className="flex justify-center">
-          <Link href={"#"}>
+          <Link href={`/shop/product/${id}`}>
             <h1 className="font-bold text-xl hover:text-red-600">{name}</h1>
           </Link>
         </div>
