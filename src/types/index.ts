@@ -7,7 +7,7 @@ export interface ProductProp {
   manufactureDate: number;
   brief: string;
   description: string[];
-  features: string[];
+  features: string[][];
   img: string;
   img300x300: string;
   qntSold: number;
@@ -64,4 +64,9 @@ export interface ProductDetailProps {
   withoutDiscont: number;
   brief: string
   category: string
+}
+
+export interface DescriptionProps {
+  description: string[]
+  features: string[][]
 }

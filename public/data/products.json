@@ -5,8 +5,8 @@
     "price": 885.0,
     "withoutDiscont": 0,
     "category": "City & Hybrid",
-    "manufactureDate":2024,
-    "qntSold":0,
+    "manufactureDate": 2024,
+    "qntSold": 0,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -14,24 +14,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-1.jpg",
-    "img300x300":"/img/products/product-1-300x300.jpg",
+    "img300x300": "/img/products/product-1-300x300.jpg",
     "inHome": false
   },
   {
     "id": 2,
     "name": "Ibis Exie Xt 2022 Bike",
-    "price": 780.00,
+    "price": 780.0,
     "withoutDiscont": 0,
     "category": "Gravel",
-    "manufactureDate":2022,
-    "qntSold":2,
+    "manufactureDate": 2022,
+    "qntSold": 2,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -39,24 +54,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-2.jpg",
-    "img300x300":"/img/products/product-2-300x300.jpg",
+    "img300x300": "/img/products/product-2-300x300.jpg",
     "inHome": true
   },
   {
     "id": 3,
     "name": "Juliana Wilder 20 Bike",
-    "price": 990.00,
-    "withoutDiscont": 1240.00,
+    "price": 990.0,
+    "withoutDiscont": 1240.0,
     "category": "City & Hybrid",
-    "manufactureDate":2022,
-    "qntSold":5,
+    "manufactureDate": 2022,
+    "qntSold": 5,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -64,24 +94,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-3.jpg",
-    "img300x300":"/img/products/product-3-300x300.jpg",
+    "img300x300": "/img/products/product-3-300x300.jpg",
     "inHome": true
   },
   {
     "id": 4,
     "name": "Marin Eldrige Grade",
-    "price": 1240.00,
+    "price": 1240.0,
     "withoutDiscont": 0,
     "category": "City & Hybrid",
-    "manufactureDate":2025,
-    "qntSold":18,
+    "manufactureDate": 2025,
+    "qntSold": 18,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -89,24 +134,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-4.jpg",
-    "img300x300":"/img/products/product-4-300x300.jpg",
+    "img300x300": "/img/products/product-4-300x300.jpg",
     "inHome": true
   },
   {
     "id": 5,
     "name": "Marin Team Marin 2",
-    "price": 1149.00,
-    "withoutDiscont": 1240.00,
+    "price": 1149.0,
+    "withoutDiscont": 1240.0,
     "category": "Mountain",
-    "manufactureDate":2023,
-    "qntSold":1,
+    "manufactureDate": 2023,
+    "qntSold": 1,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -114,24 +174,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-5.jpg",
-    "img300x300":"/img/products/product-5-300x300.jpg",
+    "img300x300": "/img/products/product-5-300x300.jpg",
     "inHome": false
   },
   {
     "id": 6,
     "name": "Niner Air 2-star Bike",
-    "price": 790.00,
+    "price": 790.0,
     "withoutDiscont": 0,
     "category": "Road",
-    "manufactureDate":2024,
-    "qntSold":1,
+    "manufactureDate": 2024,
+    "qntSold": 1,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -139,24 +214,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-6.jpg",
-    "img300x300":"/img/products/product-6-300x300.jpg",
+    "img300x300": "/img/products/product-6-300x300.jpg",
     "inHome": false
   },
   {
     "id": 7,
     "name": "Niner Air Rdo 3-star Bike",
-    "price": 1990.00,
+    "price": 1990.0,
     "withoutDiscont": 0,
     "category": "Gravel",
-    "manufactureDate":2022,
-    "qntSold":0,
+    "manufactureDate": 2022,
+    "qntSold": 0,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -164,24 +254,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-7.jpg",
-    "img300x300":"/img/products/product-7-300x300.jpg",
+    "img300x300": "/img/products/product-7-300x300.jpg",
     "inHome": false
   },
   {
     "id": 8,
     "name": "Niner Air Rdo 4-star Bike",
-    "price": 690.00,
+    "price": 690.0,
     "withoutDiscont": 0,
     "category": "Mountain",
-    "manufactureDate":2025,
-    "qntSold":3,
+    "manufactureDate": 2025,
+    "qntSold": 3,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -189,24 +294,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-8.jpg",
-    "img300x300":"/img/products/product-8-300x300.jpg",
+    "img300x300": "/img/products/product-8-300x300.jpg",
     "inHome": true
   },
   {
     "id": 9,
     "name": "Orbea Alma Bike",
-    "price": 1240.00,
-    "withoutDiscont": 1390.00,
+    "price": 1240.0,
+    "withoutDiscont": 1390.0,
     "category": "Mountain",
-    "manufactureDate":2021,
-    "qntSold":7,
+    "manufactureDate": 2021,
+    "qntSold": 7,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -214,24 +334,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-9.jpg",
-    "img300x300":"/img/products/product-9-300x300.jpg",
+    "img300x300": "/img/products/product-9-300x300.jpg",
     "inHome": true
   },
   {
     "id": 10,
     "name": "Redline Monocog Bike",
-    "price": 1449.00,
+    "price": 1449.0,
     "withoutDiscont": 0,
     "category": "Road",
-    "manufactureDate":2023,
-    "qntSold":4,
+    "manufactureDate": 2023,
+    "qntSold": 4,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -239,24 +374,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-10.jpg",
-    "img300x300":"/img/products/product-10-300x300.jpg",
+    "img300x300": "/img/products/product-10-300x300.jpg",
     "inHome": true
   },
   {
     "id": 11,
     "name": "Santa Cruz Bike",
-    "price": 990.00,
+    "price": 990.0,
     "withoutDiscont": 0,
     "category": "Gravel",
-    "manufactureDate":2024,
-    "qntSold":15,
+    "manufactureDate": 2024,
+    "qntSold": 15,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -264,24 +414,39 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-11.jpg",
-    "img300x300":"/img/products/product-11-300x300.jpg",
+    "img300x300": "/img/products/product-11-300x300.jpg",
     "inHome": true
   },
   {
     "id": 12,
     "name": "Specialized Tero Bike",
-    "price": 790.00,
+    "price": 790.0,
     "withoutDiscont": 0,
     "category": "Road",
-    "manufactureDate":2025,
-    "qntSold":10,
+    "manufactureDate": 2025,
+    "qntSold": 10,
     "brief": "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat.",
     "description": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. In nisl nisi scelerisque eu ultrices vitae auctor. Platea dictumst vestibulum rhoncus est. Nulla posuere sollicitudin aliquam ultrices.",
@@ -289,14 +454,29 @@
       "Vitae purus faucibus ornare suspendisse sed. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Metus dictum at tempor commodo. Ac auctor augue mauris augue neque gravida. Erat nam at lectus urna duis. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Id aliquet risus feugiat in ante metus dictum. Ac tortor vitae purus faucibus ornare suspendisse sed. Montes nascetur ridiculus mus mauris vitae ultricies leo."
     ],
     "features": [
-      "<strong>Series 4 6061 aluminum frame</strong> with internal cable routing, Boost spacing, and 120mm of travel",
-      "<strong>Shimano XT/SLX drivetrain</strong> performs exceptionally well in demanding terrain",
-      "<strong>TRP G-Spec FMR hydraulic disc brakes</strong> provide confidence-inspiring stopping power",
-      "<strong>Tubeless-ready rims and tires</strong> for a smoother ride, better traction, and fewer flats",
-      "<strong>TranzX Dropper Post</strong> quickly lifts and lowers your saddle with the press of a lever"
+      [
+        "Series 4 6061 aluminum frame",
+        "with internal cable routing, Boost spacing, and 120mm of travel"
+      ],
+      [
+        "Shimano XT/SLX drivetrain",
+        "performs exceptionally well in demanding terrain"
+      ],
+      [
+        "TRP G-Spec FMR hydraulic disc brakes",
+        "provide confidence-inspiring stopping power"
+      ],
+      [
+        "Tubeless-ready rims and tires",
+        "for a smoother ride, better traction, and fewer flats"
+      ],
+      [
+        "TranzX Dropper Post",
+        "quickly lifts and lowers your saddle with the press of a lever"
+      ]
     ],
     "img": "/img/products/product-12.jpg",
-    "img300x300":"/img/products/product-12-300x300.jpg",
+    "img300x300": "/img/products/product-12-300x300.jpg",
     "inHome": true
   }
 ]
