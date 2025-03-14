@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Description from "./Description";
+import Review from "./Review";
 
 interface NavDescriptionReviewProp {
     id: string;
@@ -15,7 +16,7 @@ const NavDescriptionReview = ({id}:NavDescriptionReviewProp) => {
           <li
             onClick={() => setDescriptionSelected(true)}
             className={`absolute font-bold bottom-[-1px] px-3 py-2 mx-2 border-t border-l border-r border-b border-solid border-gray-400 rounded-sm cursor-pointer ${
-              descriptionSelected ? "border-b-white" : ""
+              descriptionSelected ? "border-b-white " : "bg-gray-100"
             }`}
           >
             Description
@@ -23,7 +24,7 @@ const NavDescriptionReview = ({id}:NavDescriptionReviewProp) => {
           <li
             onClick={() => setDescriptionSelected(false)}
             className={`absolute font-bold bottom-[-1px] px-3 py-2 mx-[132px] border-t border-l border-r border-b border-solid border-gray-400 rounded-sm cursor-pointer ${
-              descriptionSelected ? "" : "border-b-white"
+              descriptionSelected ? "bg-gray-100" : "border-b-white"
             }`}
           >
             Reviews (0)
@@ -31,7 +32,7 @@ const NavDescriptionReview = ({id}:NavDescriptionReviewProp) => {
         </ul>
       </nav>
       <div className="bg-white w-full max-w-[1240px] ">
-        {descriptionSelected ?( <Description id={id}/>):(<h1></h1>)}
+        {descriptionSelected ?( <Description id={id}/>):(<Review/>)}
        
       </div>
     </div>
