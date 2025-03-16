@@ -5,7 +5,7 @@ const Timer = () => {
   const getStoredTargetDate = () => {
     const savedDate = localStorage.getItem("targetDate");
     if (savedDate) {
-      return parseInt(savedDate, 10);
+      return Number(savedDate);
     } else {
       const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
       localStorage.setItem("targetDate", newTargetDate.toString());

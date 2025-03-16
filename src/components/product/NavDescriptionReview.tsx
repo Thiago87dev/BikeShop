@@ -32,7 +32,7 @@ const NavDescriptionReview = ({id}:NavDescriptionReviewProp) => {
         </ul>
       </nav>
       <div className="bg-white w-full max-w-[1240px] ">
-        {descriptionSelected ?( <Description id={id}/>):(<Review/>)}
+        {descriptionSelected ?( <Description id={id}/>):(<Review idReview={id}/>)}
        
       </div>
     </div>
