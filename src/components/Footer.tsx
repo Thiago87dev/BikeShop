@@ -14,11 +14,11 @@ const Footer = () => {
   const [loading, setLoading] = useState(false);
 
   const categories = [
-    { label: "Mountain Bike", path: "#" },
-    { label: "Gravel Bikes", path: "#" },
-    { label: "Road Bike", path: "#" },
-    { label: "City & Hybrid", path: "#" },
-    { label: "Kids’ Bikes", path: "#" },
+    { label: "Mountain Bike", path: `/shop?c=${encodeURIComponent('Mountain')}` },
+    { label: "Gravel Bikes", path: `/shop?c=${encodeURIComponent('Gravel')}` },
+    { label: "Road Bike", path: `/shop?c=${encodeURIComponent('Road')}` },
+    { label: "City & Hybrid", path: `/shop?c=${encodeURIComponent('City & Hybrid')}` },
+    { label: "Kids’ Bikes", path: `/shop?c=${encodeURIComponent('Kids')}` },
   ];
 
   const companyInfo = [
@@ -32,7 +32,7 @@ const Footer = () => {
   const shop = [
     { label: "Shop", path: "/shop" },
     { label: "Checkout", path: "#" },
-    { label: "Cart", path: "#" },
+    { label: "Cart", path: "/cart" },
     { label: "My account", path: "#" },
     { label: "Blog", path: "/blog" },
   ];

@@ -1,7 +1,9 @@
+'use client'
 import { useEffect, useRef, useState } from "react";
 import { Star } from "lucide-react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Image from "next/image";
+import { ProductDetailProps, ProductProp } from "@/types";
 
 interface ProductIdProp {
   idReview: string;
@@ -11,6 +13,7 @@ const Review = ({ idReview }: ProductIdProp) => {
   const idReviewNumber = Number(idReview);
   const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
+  const [product, setProduct] = useState<ProductDetailProps | null>(null);
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
@@ -108,57 +111,82 @@ const Review = ({ idReview }: ProductIdProp) => {
     }
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`/data/products.json`);
+        const data: ProductProp[] = await response.json();
+        const foundProduct = data.find(
+          (product) => product.id === idReviewNumber
+        );
+        if (foundProduct) setProduct(foundProduct);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, [idReviewNumber]);
+
   return (
     <div>
-      <div className="flex px-4">
-        <div className="flex flex-col gap-5 w-[60%] pr-10">
+      <div className="flex flex-col md:flex-row px-4">
+        <div className="flex flex-col gap-5 w-full md:w-[60%] sm:pr-10 pb-10">
           <h2 className="font-bold text-3xl">Reviews</h2>
-          <p className="text-lg">There are no reviews yet.</p>
-          <div className="flex flex-col gap-5">
-            {localstorageReview
-              .filter((item) => item.id === idReviewNumber)
-              .map((item, index) => (
-                <div key={index} className="flex gap-5">
-                  <div>
-                    <Image
-                      alt="avatar"
-                      src={"/img/reviews/avatar.jpg"}
-                      width={55}
-                      height={55}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-4 border border-gray-400 w-full p-5 rounded-sm">
-                    <div className="flex justify-between ">
-                      <p className="italic text-gray-600">
-                        Your review is awaiting approval
-                      </p>
-                      <div className="flex gap-1">
-                        {Array.from({ length: 5 }).map((_, index) => {
-                          return (
-                            <div key={index}>
-                              <Star
-                                className="cursor-pointer transition-all duration-200"
-                                size={20}
-                                style={{ stroke: "black", strokeWidth: 1.2 }}
-                                fill={item.stars > index ? "#000" : "#fff"}
-                              />
-                            </div>
-                          );
-                        })}
-                      </div>
+          {localstorageReview.filter((item) => item.id === idReviewNumber)
+            .length < 1 ? (
+            <p className="text-lg">There are no reviews yet.</p>
+          ) : (
+            <div className="flex flex-col gap-5">
+              {localstorageReview
+                .filter((item) => item.id === idReviewNumber)
+                .map((item, index) => (
+                  <div key={index} className="flex gap-5">
+                    <div>
+                      <Image
+                        alt="avatar"
+                        src={"/img/reviews/avatar.jpg"}
+                        width={55}
+                        height={55}
+                        className="rounded-full"
+                      />
                     </div>
-                    <p>{item.textReview}</p>
+                    <div className="flex flex-col gap-4 border border-gray-400 w-full p-5 rounded-sm">
+                      <div className="flex flex-col sm:flex-row gap-2  justify-between ">
+                        <p className="italic text-gray-600">
+                          Your review is awaiting approval
+                        </p>
+                        <div className="flex gap-1">
+                          {Array.from({ length: 5 }).map((_, index) => {
+                            return (
+                              <div key={index}>
+                                <Star
+                                  className="cursor-pointer transition-all duration-200"
+                                  size={20}
+                                  style={{ stroke: "black", strokeWidth: 1.2 }}
+                                  fill={item.stars > index ? "#000" : "#fff"}
+                                />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      <p>{item.textReview}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-          </div>
+                ))}
+            </div>
+          )}
         </div>
-        <div className="flex flex-col gap-5 w-[40%]">
+        <div className="flex flex-col gap-5 w-full md:w-[40%]">
           <div>
-            <h2 className="font-bold text-2xl mb-1">
-              Be the first to review “Ibis Exie Xt 2022 Bike”
-            </h2>
+            {localstorageReview.filter((item) => item.id === idReviewNumber)
+              .length === 0 ? (
+              <h2 className="font-bold text-2xl mb-1">
+                Be the first to review “{product?.name}”
+              </h2>
+            ) : (
+              <h2 className="font-bold text-3xl mb-1">Add a review</h2>
+            )}
             <p className="italic text-sm">
               Your email address will not be published. Required fields are
               marked <span className="text-red-500">*</span>
@@ -245,7 +273,14 @@ const Review = ({ idReview }: ProductIdProp) => {
                 time I comment.
               </p>
             </div>
-            <div>
+            <div
+              className={`${
+                localstorageReview.filter((item) => item.id === idReviewNumber)
+                  .length > 3
+                  ? "hidden"
+                  : "block"
+              }`}
+            >
               <ReCAPTCHA
                 ref={recaptchaRef}
                 sitekey="6LdxofQqAAAAALgmzCKT2BzBVAyRzuUoZLt1dpTF"
