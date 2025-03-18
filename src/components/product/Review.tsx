@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useRef, useState } from "react";
 import { Star } from "lucide-react";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -43,55 +43,59 @@ const Review = ({ idReview }: ProductIdProp) => {
       setShowErrors(true);
       return;
     }
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("nameEmail");
 
-    localStorage.removeItem("nameEmail");
+      const nameEmail = localStorage.getItem("nameEmail");
+      const nameEmailObj: { name: string; email: string } = nameEmail
+        ? JSON.parse(nameEmail)
+        : { name, email };
+      if (!saveNameAndEmailChecked) {
+        if (typeof window !== "undefined") {
+          localStorage.setItem(
+            "nameEmail",
+            JSON.stringify({ name: "", email: "" })
+          );
+          setName("");
+          setEmail("");
+        }
+      } else {
+        localStorage.setItem("nameEmail", JSON.stringify(nameEmailObj));
+        setName(nameEmailObj.name);
+        setEmail(nameEmailObj.email);
+      }
 
-    const nameEmail = localStorage.getItem("nameEmail");
-    const nameEmailObj: { name: string; email: string } = nameEmail
-      ? JSON.parse(nameEmail)
-      : { name, email };
-    if (!saveNameAndEmailChecked) {
-      localStorage.setItem(
-        "nameEmail",
-        JSON.stringify({ name: "", email: "" })
-      );
-      setName("");
-      setEmail("");
-    } else {
-      localStorage.setItem("nameEmail", JSON.stringify(nameEmailObj));
-      setName(nameEmailObj.name);
-      setEmail(nameEmailObj.email);
-    }
+      const storedReviews = localStorage.getItem("reviews");
+      const reviewsList: { id: number; stars: number; textReview: string }[] =
+        storedReviews ? JSON.parse(storedReviews) : [];
 
-    const storedReviews = localStorage.getItem("reviews");
-    const reviewsList: { id: number; stars: number; textReview: string }[] =
-      storedReviews ? JSON.parse(storedReviews) : [];
+      if (
+        localstorageReview.filter((item) => item.id === idReviewNumber).length >
+        3
+      )
+        return;
 
-    if (
-      localstorageReview.filter((item) => item.id === idReviewNumber).length > 3
-    )
-      return;
+      const newReview = {
+        id: idReviewNumber,
+        stars: rating,
+        textReview: review,
+      };
 
-    const newReview = {
-      id: idReviewNumber,
-      stars: rating,
-      textReview: review,
-    };
+      reviewsList.push(newReview);
+      localStorage.setItem("reviews", JSON.stringify(reviewsList));
+      setLocalstorageReview(reviewsList);
 
-    reviewsList.push(newReview);
-    localStorage.setItem("reviews", JSON.stringify(reviewsList));
-    setLocalstorageReview(reviewsList);
-
-    if (!saveNameAndEmailChecked) {
-      setName("");
-      setEmail("");
-    }
-    setRating(0);
-    setReview("");
-    setShowErrors(false);
-    setCaptchaValue(null);
-    if (recaptchaRef.current) {
-      recaptchaRef.current.reset();
+      if (!saveNameAndEmailChecked) {
+        setName("");
+        setEmail("");
+      }
+      setRating(0);
+      setReview("");
+      setShowErrors(false);
+      setCaptchaValue(null);
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
     }
   };
 

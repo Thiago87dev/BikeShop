@@ -3,16 +3,20 @@ import { useEffect, useState } from "react";
 
 const Timer = () => {
   const getStoredTargetDate = () => {
-    const savedDate = localStorage.getItem("targetDate");
-    if (savedDate) {
-      return Number(savedDate);
-    } else {
-      const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
-      localStorage.setItem("targetDate", newTargetDate.toString());
-      return newTargetDate;
+    if (typeof window !== "undefined") {
+      const savedDate = localStorage.getItem("targetDate");
+      if (savedDate) {
+        return Number(savedDate);
+      } else {
+        const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
+        localStorage.setItem("targetDate", newTargetDate.toString());
+        return newTargetDate;
+      }
     }
+    return new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
   };
-  const [targetDate, setTargetDate] = useState(getStoredTargetDate);
+
+  const [targetDate, setTargetDate] = useState(0);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -21,24 +25,33 @@ const Timer = () => {
   });
 
   useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
+    setTargetDate(getStoredTargetDate());
+  }, []);
 
-      if (difference <= 0) {
-        const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
-        localStorage.setItem("targetDate", newTargetDate.toString());
-        setTargetDate(newTargetDate);
-        return { days: 15, hours: 0, minutes: 0, seconds: 0 };
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      if (typeof window !== "undefined") {
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        if (difference <= 0) {
+          const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
+          if (typeof window !== "undefined") {
+            localStorage.setItem("targetDate", newTargetDate.toString());
+          }
+          setTargetDate(newTargetDate);
+          return { days: 15, hours: 0, minutes: 0, seconds: 0 };
+        }
+        return {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          ),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        };
       }
-      return {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
-        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((difference % (1000 * 60)) / 1000),
-      };
+      return { days: 15, hours: 0, minutes: 0, seconds: 0 };
     };
 
     setTimeLeft(calculateTimeLeft());
