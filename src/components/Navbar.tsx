@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link href={"/"}>
             <Image
               alt="logo"
-              src={"/img/header-logo.png"}
+              src={"/img/hero/header-logo.png"}
               width={160}
               height={160}
               onClick={() => setActiveMenuItem("Home")}

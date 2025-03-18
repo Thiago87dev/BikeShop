@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ProductDetailProps, ProductProp } from "@/types";
 import ZoomImage from "./ZoomImage";
 import Link from "next/link";
@@ -38,7 +38,7 @@ const Product = ({ id }: ProductIdProp) => {
   }, []);
 
   return (
-    <div className="bg-[#f7f7f7] flex flex-col ">
+    <div className="bg-[#f7f7f7] flex flex-col px-2">
       {product?.category && (
         <p className="w-full max-w-[1240px] mx-auto pt-16 pb-4">
           <Link href={"/"}>Home</Link> / <Link href={"/shop"}>Shop</Link> /{" "}
@@ -48,11 +48,11 @@ const Product = ({ id }: ProductIdProp) => {
           / {product.name}
         </p>
       )}
-      <div className="flex items-center gap-10 mx-auto bg-white w-full max-w-[1240px] p-6">
-        <div className="w-[565.4px]">
+      <div className="flex flex-col md:flex-row items-center bg-white gap-10 mx-auto w-full  max-w-[1240px] p-6">
+        <div className="max-w-[565.4px]">
           <div>{product?.img && <ZoomImage image={product.img} />}</div>
         </div>
-        <div className="flex flex-col gap-8 w-[45%]">
+        <div className="flex flex-col gap-8 w-full md:w-[65%] lg:w-[45%] ">
           <h1 className="text-5xl font-bold">{product?.name}</h1>
           <p className="text-2xl">${product?.price}.00</p>
           <p className="text-lg">{product?.brief}</p>

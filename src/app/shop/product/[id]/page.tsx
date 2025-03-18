@@ -9,7 +9,7 @@ const ProductDetail = () => {
 
   
   return (
-    <div>
+    <div className="bg-[#f7f7f7]">
       <div>{id && <Product id={id as string} />}</div>
       <div>{id && <NavDescriptionReview id={id as string} />}</div>
       <div><RelatedProducts id={id as string}/></div>

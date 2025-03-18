@@ -41,7 +41,7 @@ const Description = ({ id }: ProductIdProp) => {
         <div className="text-lg">
           {product?.features.map((i, index) => (
             <div key={index}>
-              <ul className="flex gap-1  px-8">
+              <ul className="flex flex-col lg:flex-row gap-1  px-8">
                 {i.map((j, index2) => (
                   <li
                     className={`${index2 === 0 ? "font-bold list-disc" : ""}`}

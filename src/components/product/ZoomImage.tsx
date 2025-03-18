@@ -48,18 +48,10 @@ const ZoomImage = ({ image }: ZoomImageProps) => {
   return (
     <div>
       <div
-        className="relative w-[565.4px] h-[376.9px] overflow-hidden group"
+        className="max-w-[565.4px] max-h-[376.9px] overflow-hidden group"
         onMouseMove={handleMouseMove}
       >
-        <div
-          onMouseEnter={() => setDisableZoom(true)}
-          onMouseLeave={() => setDisableZoom(false)}
-          onClick={handleToggleImgPopUp}
-          className=" absolute top-2 right-2 bg-white p-[10px] rounded-full cursor-pointer z-10"
-        >
-          <FaSearch size={20} />
-        </div>
-        <div>
+        <div className="relative w-fit">
           <Image
             alt="bicicleta"
             src={image}
@@ -72,6 +64,14 @@ const ZoomImage = ({ image }: ZoomImageProps) => {
               transformOrigin: `${position.x} ${position.y}`,
             }}
           />
+          <div
+            onMouseEnter={() => setDisableZoom(true)}
+            onMouseLeave={() => setDisableZoom(false)}
+            onClick={handleToggleImgPopUp}
+            className=" absolute top-2 right-2 bg-white p-[10px] rounded-full cursor-pointer z-10"
+          >
+            <FaSearch size={20} />
+          </div>
         </div>
       </div>
       {imgPopUp && (

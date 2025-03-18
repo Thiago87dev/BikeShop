@@ -43,13 +43,13 @@ const RelatedProducts = ({ id }: ProductIdProp) => {
   }, [productCategory, idNumber]);
 
   return (
-    <div className="flex flex-col items-center bg-[#f7f7f7] ">
+    <div className="flex flex-col items-center  ">
       <div className="bg-white flex flex-col gap-8 w-full max-w-[1240px] px-4 mb-20">
         <h2 className="font-bold text-4xl">Related Products</h2>
-        <div className="flex gap-10 mb-10">
+        <div className="flex flex-col sm:flex-row gap-10 mb-10">
           {relatedProducts?.map((item) => (
             <div key={item.id}>
-              <div className="w-[387px]">
+              <div className="w-full lg:w-[387px]">
                 <CardProducts
                   id={item.id}
                   img300x300={item.img300x300}
