@@ -2,21 +2,7 @@
 import { useEffect, useState } from "react";
 
 const Timer = () => {
-  const getStoredTargetDate = () => {
-    if (typeof window !== "undefined") {
-      const savedDate = localStorage.getItem("targetDate");
-      if (savedDate) {
-        return Number(savedDate);
-      } else {
-        const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
-        localStorage.setItem("targetDate", newTargetDate.toString());
-        return newTargetDate;
-      }
-    }
-    return new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
-  };
-
-  const [targetDate, setTargetDate] = useState(0);
+  const [targetDate, setTargetDate] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -25,43 +11,51 @@ const Timer = () => {
   });
 
   useEffect(() => {
-    setTargetDate(getStoredTargetDate());
-  }, []);
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      if (typeof window !== "undefined") {
-        const now = new Date().getTime();
-        const difference = targetDate - now;
-
-        if (difference <= 0) {
-          const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
-          if (typeof window !== "undefined") {
-            localStorage.setItem("targetDate", newTargetDate.toString());
-          }
-          setTargetDate(newTargetDate);
-          return { days: 15, hours: 0, minutes: 0, seconds: 0 };
-        }
-        return {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor(
-            (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          ),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
-        };
+    const getStoredTargetDate = () => {
+      const savedDate = localStorage.getItem("targetDate");
+      if (savedDate) {
+        return Number(savedDate);
+      } else {
+        const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
+        localStorage.setItem("targetDate", newTargetDate.toString());
+        return newTargetDate;
       }
-      return { days: 15, hours: 0, minutes: 0, seconds: 0 };
     };
 
-    setTimeLeft(calculateTimeLeft());
+    setTargetDate(getStoredTargetDate()); // Atualiza o estado com o valor de targetDate
 
-    const timer = setInterval(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime();
+      const difference = targetDate! - now;
+
+      if (difference <= 0) {
+        const newTargetDate = new Date().getTime() + 15 * 24 * 60 * 60 * 1000;
+        localStorage.setItem("targetDate", newTargetDate.toString());
+        setTargetDate(newTargetDate);
+        return { days: 15, hours: 0, minutes: 0, seconds: 0 };
+      }
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000),
+      };
+    };
+
+    if (targetDate !== null) {
       setTimeLeft(calculateTimeLeft());
-    }, 1000);
 
-    return () => clearInterval(timer);
+      const timer = setInterval(() => {
+        setTimeLeft(calculateTimeLeft());
+      }, 1000);
+
+      return () => clearInterval(timer);
+    }
   }, [targetDate]);
+
+  if (targetDate === null) return null; // Retorna nada até o targetDate ser definido
 
   return (
     <div className="bg-red-600 flex justify-center w-full py-2 sm:py-6">
