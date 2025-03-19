@@ -1,3 +1,5 @@
+
+import RedStripWithCounter from "./countNumber/RedStripWithCounter"
 import Records from "./records/Records"
 import Strip from "./Strip"
 
@@ -6,6 +8,7 @@ const AboutMain = () => {
     <div>
       <Strip/>
       <Records/>
+      <RedStripWithCounter/>
     </div>
   )
 }
