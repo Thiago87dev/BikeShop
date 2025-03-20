@@ -1,12 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Texts from "./Texts";
 
 const NavRecords = () => {
   const [activeNavItem, setActiveNavItem] = useState("2014");
   const [activeNavItemBefore, setActiveNavItemBefore] = useState("");
-
   const [isMobile, setIsMobile] = useState(false);
+
+  const textsContainerRef = useRef<{ [key: string]: HTMLDivElement | null }>(
+    {}
+  );
 
   const navItems = ["2014", "2018", "2020", "2022"];
 
@@ -20,17 +23,25 @@ const NavRecords = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  useEffect(()=> {
-    if(!isMobile && activeNavItem === '0') setActiveNavItem(activeNavItemBefore)
-  },[isMobile, activeNavItem, activeNavItemBefore])
+  useEffect(() => {
+    if (!isMobile && activeNavItem === "0")
+      setActiveNavItem(activeNavItemBefore);
+  }, [isMobile, activeNavItem, activeNavItemBefore]);
 
   const handleNavItemClick = (item: string) => {
     if (isMobile) {
       if (item === activeNavItem) {
         setActiveNavItem("0");
-        setActiveNavItemBefore(item)
+        setActiveNavItemBefore(item);
       } else {
         setActiveNavItem(item);
+
+        setTimeout(() => {
+          textsContainerRef.current[item]?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 100);
       }
     } else {
       setActiveNavItem(item);
@@ -54,6 +65,9 @@ const NavRecords = () => {
                 {item}
               </li>
               <div
+                ref={(el) => {
+                  textsContainerRef.current[item] = el;
+                }}
                 className={`sm:hidden bg-white max-w-[624px] p-8 ${
                   activeNavItem === item ? "block" : "hidden"
                 }`}
