@@ -4,6 +4,7 @@ import OurMission from "./OurMission"
 import OurTeam from "./ourTeam/OurTeam"
 import Records from "./records/Records"
 import Strip from "./Strip"
+import TopBrands from "./topBrands/TopBrands"
 
 const AboutMain = () => {
   return (
@@ -13,6 +14,7 @@ const AboutMain = () => {
       <RedStripWithCounter/>
       <OurMission/>
       <OurTeam/>
+      <TopBrands/>
     </div>
   )
 }
