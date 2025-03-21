@@ -7,7 +7,7 @@ const NavRecords = () => {
   const [activeNavItemBefore, setActiveNavItemBefore] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
-  const textsContainerRef = useRef<{ [key: string]: HTMLDivElement | null }>(
+  const textsContainerRef = useRef<{ [key: string]: HTMLLIElement | null }>(
     {}
   );
 
@@ -55,6 +55,9 @@ const NavRecords = () => {
           {navItems.map((item, index) => (
             <div key={index}>
               <li
+                ref={(el) => {
+                  textsContainerRef.current[item] = el;
+                }}
                 className={`font-bold text-xl p-3 hover:bg-red-600 hover:text-white transition-all duration-300 cursor-pointer ${
                   activeNavItem === item
                     ? "bg-red-600 text-white"
@@ -65,9 +68,6 @@ const NavRecords = () => {
                 {item}
               </li>
               <div
-                ref={(el) => {
-                  textsContainerRef.current[item] = el;
-                }}
                 className={`sm:hidden bg-white max-w-[624px] p-8 ${
                   activeNavItem === item ? "block" : "hidden"
                 }`}
