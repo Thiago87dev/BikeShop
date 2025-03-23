@@ -1,5 +1,6 @@
 
 import RedStripWithCounter from "./countNumber/RedStripWithCounter"
+import GetWeeklyTips from "./getWeeklyTips/GetWeeklyTips"
 import OurMission from "./OurMission"
 import OurTeam from "./ourTeam/OurTeam"
 import Records from "./records/Records"
@@ -17,6 +18,7 @@ const AboutMain = () => {
       <OurTeam/>
       <TopBrands/>
       <Testimonials/>
+      <GetWeeklyTips/>
     </div>
   )
 }

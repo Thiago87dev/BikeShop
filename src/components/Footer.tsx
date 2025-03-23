@@ -1,17 +1,13 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { PulseLoader } from "react-spinners";
+import EmailForm from "./EmailForm";
 
 const year = new Date().getFullYear();
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [error, seterror] = useState("");
-  const [loading, setLoading] = useState(false);
+
 
   const categories = [
     { label: "Mountain Bike", path: `/shop?c=${encodeURIComponent('Mountain')}` },
@@ -37,28 +33,6 @@ const Footer = () => {
     { label: "Blog", path: "/blog" },
   ];
 
-  const handleEmailSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (!email) {
-      seterror("Email is Required");
-    } else {
-      setLoading(true)
-      setTimeout(() => {
-          seterror("Submission Failed");
-          setLoading(false);
-      }, 1800);
-    }
-
-  };
-
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-    if (error) {
-      seterror("");
-    }
-  };
-
   return (
     <div className="flex justify-center bg-black text-white">
       <div className="flex flex-col items-center lg:items-stretch w-full max-w-[1240px] pt-20 pb-10 px-4">
@@ -77,34 +51,7 @@ const Footer = () => {
             <h2 className="font-semibold mx-auto lg:mx-0 text-2xl mb-3 text-center lg:text-left">
               Sign-up For Special Offers!
             </h2>
-            <form
-              onSubmit={handleEmailSubmit}
-              className="relative flex flex-col gap-4"
-            >
-              {loading && (
-                <div className="absolute flex items-center bg-black/70 backdrop-blur-sm justify-center inset-0">
-                  <PulseLoader size={20} color="#bababa" />
-                </div>
-              )}
-              <input
-                type="email"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="Your Email Address..."
-                className="bg-transparent border-[1px] border-solid border-gray-500 p-4 text-lg"
-              />
-              {error && (
-                <p className="text-red-500 text-lg font-bold bg-white border-[1px] border-solid border-red-500 p-2">
-                  {error}
-                </p>
-              )}
-              <button
-                type="submit"
-                className="bg-red-600 py-3 px-9 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase text-xl"
-              >
-                submit
-              </button>
-            </form>
+            <EmailForm  colorButton="bg-red-600" colorInput="" inputPlaceholder="Your Email Address" textButton="Submit"/>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-between text-center lg:text-left gap-10 lg:w-[600px]">
             <div>
