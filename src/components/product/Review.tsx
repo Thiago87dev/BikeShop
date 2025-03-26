@@ -287,7 +287,7 @@ const Review = ({ idReview }: ProductIdProp) => {
             >
               <ReCAPTCHA
                 ref={recaptchaRef}
-                sitekey={`${process.env.NEXT_PUBLIC_SITEKEY}`}
+                sitekey={`${process.env.NEXT_PUBLIC_RECAPTCHA}`}
                 onChange={handleCaptchaChange}
               />
               {!captchaValue && showErrors && (
