@@ -1,7 +1,10 @@
+import BlogMain from "@/components/blog/BlogMain"
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <BlogMain/>
+    </div>
   )
 }
 

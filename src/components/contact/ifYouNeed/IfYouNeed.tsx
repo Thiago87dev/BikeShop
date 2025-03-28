@@ -1,6 +1,7 @@
 import { FaRegMap } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import Link from "next/link";
 const IfYouNeed = () => {
   return (
     <div className="flex justify-center bg-[#fbfbfb] md:py-20">
@@ -9,9 +10,11 @@ const IfYouNeed = () => {
         <div className="absolute inset-0 bg-[#ae0808] opacity-90"></div>
           <div className="relative flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-0 sm:p-24 py-16 px-4">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left font-bold lg:w-[60%] capitalize">If you need more information please <span className="whitespace-nowrap">contact us</span></h2>
+            <Link href={'#'}>
             <button className="bg-red-600 text-white font-semibold uppercase block px-8 py-5 hover:bg-red-700 transition-colors duration-200 ">
               get in touch
             </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white flex flex-col lg:flex-row gap-10 lg:gap-0 sm:px-20 py-10 justify-between px-4">

@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import Modal from "./Modal";
+import Modal from "./Accordion";
 
 const CanWeHelpYou = () => {
   return (

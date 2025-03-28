@@ -40,7 +40,7 @@ const Modal = () => {
   }
 
   return (
-    <div className={`transition-all duration-300 ease-in-out ${activeId ?"min-h-[580px]":"min-h-0"}`}>
+    <div className={`transition-all duration-300 ease-in-out ${activeId ?"min-h-[540px]":"min-h-0"}`}>
       {listModal.map((item) => (
         <div
           key={item.id}
