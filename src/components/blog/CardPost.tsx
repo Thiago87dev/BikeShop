@@ -11,13 +11,13 @@ interface CardPostProps {
 const CardPost = ({ secondaryCategory, title, img }: CardPostProps) => {
   return (
     <div>
-      <div className="flex bg-white">
+      <div className="flex flex-col md:flex-row bg-white ">
         <Link href={"#"}>
-          <div className="w-[282px] h-[282px] overflow-hidden relative cursor-pointer">
-            <Image alt="post blog" src={img} layout="fill" objectFit="cover" />
+          <div className="w-full h-[400px] md:w-[282px] md:h-[282px] overflow-hidden relative cursor-pointer">
+            <Image className="object-cover" alt="post blog" src={img} layout="fill" />
           </div>
         </Link>
-        <div className="px-6 py-5 max-w-[552px]">
+        <div className="px-6 py-5 w-full max-w-[552px]">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <Link href={"#"} className="w-fit">

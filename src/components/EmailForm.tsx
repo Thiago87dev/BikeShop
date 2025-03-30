@@ -7,6 +7,7 @@ interface EmailFormProps {
   colorInput?: string;
   colorButton: string;
   textButton: string;
+  paddingInput?: string
 }
 
 const EmailForm = ({
@@ -14,6 +15,7 @@ const EmailForm = ({
   colorButton,
   inputPlaceholder,
   textButton,
+  paddingInput = 'p-5'
 }: EmailFormProps) => {
   const [email, setEmail] = useState("");
   const [error, seterror] = useState("");
@@ -55,7 +57,7 @@ const EmailForm = ({
           value={email}
           onChange={handleEmailChange}
           placeholder={inputPlaceholder}
-          className={`bg-transparent ${colorInput} border-[1px] border-solid border-gray-500 p-4 text-lg`}
+          className={`bg-transparent ${colorInput} border-[1px] border-solid border-gray-500 ${paddingInput} text-lg`}
         />
         {error && (
           <p className="text-red-500 text-lg font-bold bg-white border-[1px] border-solid border-red-500 p-2">
