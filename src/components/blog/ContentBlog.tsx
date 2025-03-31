@@ -5,8 +5,12 @@ import CardPost from "./CardPost";
 import SubscribeForm from "./SubscribeForm";
 import NavReviewsStories from "./navReviewsStories/NavReviewsStories";
 import Image from "next/image";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const ContentBlog = () => {
+  const categorySelected = useSelector((state: RootState) => state.Category);
+
   const [postData, setPostData] = useState<PostProp[]>([]);
 
   useEffect(() => {
@@ -28,15 +32,31 @@ const ContentBlog = () => {
         <div>
           <div>
             <div className="flex flex-col gap-10">
-              {postData.map((item) => (
-                <div key={item.id}>
-                  <CardPost
-                    img={item.img}
-                    secondaryCategory={item.secondaryCategory}
-                    title={item.title}
-                  />
-                </div>
-              ))}
+              {categorySelected.selectedCategory !== "all"
+                ? postData
+                    .filter(
+                      (item) =>
+                        item.secondaryCategory ===
+                        categorySelected.selectedCategory
+                    )
+                    .map((item) => (
+                      <div key={item.id}>
+                        <CardPost
+                          img={item.img}
+                          secondaryCategory={item.secondaryCategory}
+                          title={item.title}
+                        />
+                      </div>
+                    ))
+                : postData.map((item) => (
+                    <div key={item.id}>
+                      <CardPost
+                        img={item.img}
+                        secondaryCategory={item.secondaryCategory}
+                        title={item.title}
+                      />
+                    </div>
+                  ))}
             </div>
           </div>
         </div>
