@@ -8,9 +8,10 @@ interface CardPostProps {
   secondaryCategory: string;
   title: string;
   img: string;
+  id:number
 }
 
-const CardPost = ({ secondaryCategory, title, img }: CardPostProps) => {
+const CardPost = ({ secondaryCategory, title, img, id }: CardPostProps) => {
   const dispatch = useDispatch();
 
   const handleCategoryClick = (category: string) => {
@@ -20,7 +21,7 @@ const CardPost = ({ secondaryCategory, title, img }: CardPostProps) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row bg-white ">
-        <Link href={"#"}>
+        <Link href={`/blog/post/${id}`}>
           <div className="w-full h-[400px] md:w-[282px] md:h-[282px] overflow-hidden relative cursor-pointer">
             <Image
               className="object-cover"
@@ -39,7 +40,7 @@ const CardPost = ({ secondaryCategory, title, img }: CardPostProps) => {
               >
                 {secondaryCategory}
               </h3>
-              <Link href={"#"} className="w-fit">
+              <Link href={`/blog/post/${id}`} className="w-fit">
                 <h2 className="font-bold text-2xl hover:text-red-600">
                   {title}
                 </h2>
@@ -50,7 +51,7 @@ const CardPost = ({ secondaryCategory, title, img }: CardPostProps) => {
               sit. Nunc pulvinar sapien…
             </p>
             <div className="hover:text-red-600">
-              <Link className="flex gap-2 items-center w-fit" href={"#"}>
+              <Link className="flex gap-2 items-center w-fit" href={`/blog/post/${id}`}>
                 <p className="uppercase font-bold">Read more</p>
                 <div>
                   <HiOutlineArrowNarrowRight />

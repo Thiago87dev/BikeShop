@@ -7,7 +7,6 @@ import { useParams } from "next/navigation";
 const ProductDetail = () => {
   const { id } = useParams();
 
-  
   return (
     <div className="bg-[#f7f7f7]">
       <div>{id && <Product id={id as string} />}</div>
