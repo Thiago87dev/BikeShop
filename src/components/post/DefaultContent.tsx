@@ -4,7 +4,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const DefaultContent = () => {
   return (
-    <div className="flex flex-col gap-5 w-full items-center lg:items-stretch bg-white p-4 sm:p-8 text-lg">
+    <div className="flex flex-col gap-5 w-full bg-white p-4 sm:p-8 text-lg">
       <p className="first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">
         Arcu non odio euismod lacinia. Sit amet cursus sit amet dictum sit. Nunc
         pulvinar sapien et ligula ullamcorper. Pellentesque diam volutpat
@@ -20,7 +20,7 @@ const DefaultContent = () => {
         scelerisque varius morbi. Augue mauris augue neque gravida in fermentum
         et sollicitudin ac.
       </p>
-      <h2 className="font-bold text-[40px] leading-normal capitalize">
+      <h2 className="font-bold text-3xl md:text-[40px] leading-normal capitalize">
         Scelerisque eu ultrices vitae auctor eu lectus.
       </h2>
       <p>
@@ -66,21 +66,27 @@ const DefaultContent = () => {
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <div className="flex justify-between">
-        <Image
-          alt="men in bike"
-          src={"/img/saleUpTo/josh-nuttall.jpg"}
-          width={380}
-          height={380}
-        />
-        <Image
-          alt="men in bike"
-          src={"/img/blog/pexels-cottonbro-5465057-768x512.jpg"}
-          width={380}
-          height={380}
-        />
+      <div className="flex flex-col md:flex-row justify-between gap-4">
+        <div>
+          <Image
+            alt="men in bike"
+            src={"/img/saleUpTo/josh-nuttall.jpg"}
+            width={380}
+            height={380}
+            className="w-full md:w-[600px] lg:w-[380px]"
+          />
+        </div>
+        <div>
+          <Image
+            alt="men in bike"
+            src={"/img/blog/pexels-cottonbro-5465057-768x512.jpg"}
+            width={380}
+            height={380}
+             className="w-full md:w-[600px] lg:w-[380px]"
+          />
+        </div>
       </div>
-      <h2 className="font-bold text-[40px] leading-normal capitalize">
+      <h2 className="font-bold text-3xl md:text-[40px] leading-normal capitalize">
         Eget est lorem ipsum amet consectetur adipiscing.
       </h2>
       <p>
