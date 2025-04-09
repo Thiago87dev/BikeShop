@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import Carousel from "./Carousel";
 
 const DefaultContent = () => {
   return (
@@ -82,7 +83,7 @@ const DefaultContent = () => {
             src={"/img/blog/pexels-cottonbro-5465057-768x512.jpg"}
             width={380}
             height={380}
-             className="w-full md:w-[600px] lg:w-[380px]"
+            className="w-full md:w-[600px] lg:w-[380px]"
           />
         </div>
       </div>
@@ -113,6 +114,22 @@ const DefaultContent = () => {
         et quas molestias excepturi sint occaecati cupiditate non provident,
         similique sunt in culpa qui officia deserunt mollitia animi, id est
         laborum et dolorum fuga.
+      </p>
+      <div>
+        <Carousel />
+      </div>
+      <h2 className="font-bold text-3xl md:text-[38px] leading-normal capitalize">
+        Donec ultrices tincidunt arcu non sodales.
+      </h2>
+      <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+        et quas molestias excepturi sint occaecati cupiditate non provident,
+        similique sunt in culpa qui officia deserunt mollitia animi, id est
+        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+        cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+        omnis voluptas assumenda est, omnis dolor repellendus.
       </p>
     </div>
   );
