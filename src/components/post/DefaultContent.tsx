@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import Carousel from "./Carousel";
+import { TbTriangleInvertedFilled } from "react-icons/tb";
 
 const DefaultContent = () => {
   return (
@@ -131,8 +132,129 @@ const DefaultContent = () => {
         cumque nihil impedit quo minus id quod maxime placeat facere possimus,
         omnis voluptas assumenda est, omnis dolor repellendus.
       </p>
+      <div className="flex flex-col md:flex-row md:gap-12 ">
+        <div className="flex flex-col">
+          <p className="py-4">
+            <span className="font-bold">1.</span> Bibendum est ultricies integer
+            quis. Risus quis varius quam quisque id diam vel. Lorem mollis
+            aliquam ut porttitor leo a diam sollicitudin.
+          </p>
+          <p className="py-4">
+            <span className="font-bold ">2.</span> Faucibus scelerisque eleifend
+            donec pretium vulputate sapien nec. Aliquet bibendum enim facilisis
+            gravida neque convallis. In hendrerit gravida rutrum.
+          </p>
+        </div>
+        <div className="flex flex-col ">
+          <p className="py-4">
+            <span className="font-bold">3.</span> Mi eget mauris pharetra et
+            ultrices neque ornare aenean euismod. Habitasse platea dictumst
+            quisque sagittis purus sit amet volutpat.
+          </p>
+          <p className="py-4">
+            <span className="font-bold">4.</span> Vulputate sapien nec sagittis
+            aliquam malesuada bibendum arcu. Dolor morbi non arcu risus quis
+            varius quam quisque id. Mattis rhoncus urna neque viverra justo nec.
+          </p>
+        </div>
+      </div>
+      <div>
+        <Image
+          alt="men in bike"
+          src={"/img/blog/murillo-de-paula-o2FCfhNSjPo-unsplash-1024x683.jpg"}
+          width={1200}
+          height={1200}
+        />
+      </div>
+      <p>
+        Viverra nibh cras pulvinar mattis nunc sed blandit. Aliquet eget sit
+        amet tellus cras adipiscing enim. Rutrum quisque non tellus orci ac
+        auctor augue mauris. Maecenas volutpat blandit aliquam etiam erat velit.
+        Quisque non tellus orci ac auctor augue mauris augue neque. Augue lacus
+        viverra vitae congue eu consequat ac felis. Sit amet risus nullam eget
+        felis eget nunc lobortis.
+      </p>
+      <div className="flex flex-col gap-10 bg-[#f7f7f7] p-10 pt-20 relative mt-20 ">
+        <div className="absolute flex justify-center items-center -top-5 left-1/2 -translate-x-1/2 w-[70px] h-[70px] bg-red-600 rounded-full">
+          <svg
+            className="w-8 h-8 text-white"
+            viewBox="0 0 8 8"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 0l-3 3v3h3v-6zm5 0l-3 3v3h3v-6z"
+              transform="translate(0 1)"
+            />
+          </svg>
+        </div>
+        <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center capitalize px-2 sm:px-8">
+          Lectus proin nibh nisl condimentum id venenatis a condimentum?
+        </h2>
+        <p className="text-center">
+          Neque laoreet suspendisse interdum consectetur libero id faucibus.
+          Massa sed elementum tempus egestas sed sed risus pretium. In nulla
+          posuere sollicitudin aliquam ultrices sagittis orci. Aliquam
+          vestibulum morbi blandit cursus risus. Scelerisque eu ultrices vitae
+          auctor eu augue ut lectus.
+        </p>
+        <div className="absolute text-[#f7edf1] -bottom-5 left-1/2 -translate-x-1/2">
+          <TbTriangleInvertedFilled size={25} />
+        </div>
+      </div>
+      <div className="flex flex-col items-center pl-20 mt-2">
+        <div>
+          <h3 className="text-base font-bold">Donald Dyer</h3>
+          <p className="text-base">Professional Cyclist</p>
+        </div>
+      </div>
+      <p className="mt-10">
+        Viverra nibh cras pulvinar mattis nunc sed blandit. Aliquet eget sit
+        amet tellus cras adipiscing enim. Rutrum quisque non tellus orci ac
+        auctor augue mauris. Maecenas volutpat blandit Viverra orci sagittis eu
+        volutpat odio facilisis mauris sit. Facilisi cras fermentum odio eu
+        feugiat pretium. Aliquam purus sit amet luctus. Euismod quis viverra
+        nibh cras. Sed faucibus turpis in eu mi bibendum. Turpis tincidunt id
+        aliquet risus feugiat in ante.
+      </p>
+      <div className="flex flex-col md:flex-row gap-10 mt-10">
+        <div>
+          <Image
+            alt="men in bike"
+            src={"/img/bestOffer/pexels-cottonbro-600x900.jpg"}
+            width={960}
+            height={960}
+          />
+        </div>
+        <div className="flex flex-col gap-10 justify-between">
+          <p>
+            Volutpat maecenas volutpat blandit aliquam etiam. Arcu odio ut sem
+            nulla pharetra diam sit. Sit amet nisl suscipit adipiscing bibendum
+            est ultricies.
+          </p>
+          <p>
+            Ornare aenean euismod elementum nisi quis eleifend quam adipiscing.
+            Morbi leo urna molestie at. Tempus urna et pharetra pharetra massa
+            massa ultricies mi. Massa sed elementum tempus egestas sed sed risus
+          </p>
+          <p>
+            Tellus integer feugiat scelerisque varius morbi. Augue mauris augue
+            neque gravida in fermentum et sollicitudin ac. Diam ut venenatis
+            tellus in metus vulputate eu scelerisque felis. Commodo sed egestas
+            egestas fringilla phasellus faucibus.
+          </p>
+        </div>
+      </div>
+      <p className="mt-8">
+        Congue eu consequat ac felis donec et. Turpis tincidunt id aliquet risus
+        feugiat in ante metus dictum. Leo vel orci porta non pulvinar neque.
+        Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus
+        scelerisque. Vitae tortor condimentum lacinia quis vel eros. Ac orci
+        phasellus egestas tellus rutrum tellus pellentesque. Id neque aliquam
+        vestibulum morbi. Hac habitasse platea dictumst quisque sagittis purus
+        sit amet.
+      </p>
     </div>
   );
 };
-
 export default DefaultContent;

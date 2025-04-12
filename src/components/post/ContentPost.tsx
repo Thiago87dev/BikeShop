@@ -25,6 +25,7 @@ const ContentPost = () => {
       fetchData();
     }
   }, [id]);
+  
   if (!post) {
     return (
       <div className="w-full text-center py-8">Nenhum post encontrado</div>
