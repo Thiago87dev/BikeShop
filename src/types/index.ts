@@ -56,6 +56,7 @@ export interface CardPostProp {
   secondaryCategory: string;
   title: string;
   img: string;
+  id:number
 }
 
 export interface ProductDetailProps {

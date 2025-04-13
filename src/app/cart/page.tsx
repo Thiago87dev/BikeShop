@@ -1,7 +1,8 @@
+import CartMain from "@/components/cart/CartMain"
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div><CartMain/></div>
   )
 }
 

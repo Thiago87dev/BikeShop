@@ -39,6 +39,7 @@ const MostPopularPost = () => {
                   img={item.img}
                   secondaryCategory={item.secondaryCategory}
                   title={item.title}
+                  id={item.id}
                 />
               </div>
             ))}
