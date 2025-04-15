@@ -3,10 +3,19 @@ import { RootState } from "@/redux/store";
 import { useEffect, useState } from "react";
 import { PostProp } from "@/types";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
+import { setBlogCategory } from "@/redux/blogCategorySelected/slice";
+import Link from "next/link";
 
 const ContentPost = () => {
   const [post, setPost] = useState<PostProp | null>(null);
   const id = useSelector((state: RootState) => state.IdNumber);
+
+  const dispatch = useDispatch();
+
+  const handleCategoryClick = (category: string) => {
+    dispatch(setBlogCategory(category));
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +34,7 @@ const ContentPost = () => {
       fetchData();
     }
   }, [id]);
-  
+
   if (!post) {
     return (
       <div className="w-full text-center py-8">Nenhum post encontrado</div>
@@ -33,8 +42,15 @@ const ContentPost = () => {
   }
   return (
     <div className="flex flex-col gap-5 w-full items-center lg:items-stretch bg-white p-4 sm:p-8">
-      <h2 className="text-red-600 font-bold ">{post.secondaryCategory}</h2>
-      <h1 className="text-[40px] font-bold leading-none text-center lg:text-left">{post.title}</h1>
+      <h2
+        onClick={() => handleCategoryClick(post.secondaryCategory)}
+        className="text-red-600 font-bold "
+      >
+        <Link href={"/blog"}>{post.secondaryCategory}</Link>
+      </h2>
+      <h1 className="text-[40px] font-bold leading-none text-center lg:text-left">
+        {post.title}
+      </h1>
       <div className="flex gap-2 items-center text-sm">
         <p>By {post.author}</p>
         <div className="w-1 h-1 bg-black rounded-full"></div>

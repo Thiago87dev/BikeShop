@@ -20,7 +20,7 @@ const ReviewsStories = ({ revOrStor }: { revOrStor: string }) => {
           .slice(0, 5)
           .map((item) => (
             <div key={item.id}>
-              <CardReviewsStories img={item.img} title={item.title} />
+              <CardReviewsStories img={item.img} title={item.title} id={item.id} />
             </div>
           ))}
       </div>

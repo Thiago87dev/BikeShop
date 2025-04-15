@@ -5,12 +5,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { setBlogCategory } from "@/redux/blogCategorySelected/slice";
 
 const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
   const [activeSandwichMenu, setActiveSandwichMenu] = useState(false);
 
   const pathname = usePathname();
+
+  const dispatch = useDispatch();
 
   const handleToggleMenu = () => {
     setActiveSandwichMenu(!activeSandwichMenu);
@@ -87,6 +91,7 @@ const Navbar = () => {
                 >
                   {item.label}
                 </Link>
+
                 <hr className="border-gray-700 opacity-70" />
               </li>
             ))}
@@ -105,6 +110,11 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.path}
+                    onClick={() => {
+                      if (item.label === "Blog") {
+                        dispatch(setBlogCategory("all"));
+                      }
+                    }}
                     className={`${
                       activeMenuItem === item.label
                         ? "text-red-500"
