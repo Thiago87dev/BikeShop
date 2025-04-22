@@ -5,10 +5,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import { useDispatch } from "react-redux";
+
+import { useDispatch, useSelector } from "react-redux";
 import { setBlogCategory } from "@/redux/blogCategorySelected/slice";
+import { RootState } from "@/redux/store";
 
 const Navbar = () => {
+    const bikesInCart = useSelector((state: RootState) => state.Cart.bikes);
+
   const [activeMenuItem, setActiveMenuItem] = useState("Home");
   const [activeSandwichMenu, setActiveSandwichMenu] = useState(false);
 
@@ -96,6 +100,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="flex p-9 items-center cursor-pointer">
+            <Link className="flex items-center" href={"/cart"}>
+              <FiShoppingCart size={22} />
+              <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
+                {bikesInCart.reduce((acc, item) => acc + item.quantity!, 0)}
+              </div>
+            </Link>
+          </div>
         </div>
 
         <div className="hidden lg:flex gap-16">
@@ -131,7 +143,7 @@ const Navbar = () => {
             <Link className="flex items-center" href={"/cart"}>
               <FiShoppingCart size={22} />
               <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
-                0
+                {bikesInCart.reduce((acc, item) => acc + item.quantity!, 0)}
               </div>
             </Link>
           </div>

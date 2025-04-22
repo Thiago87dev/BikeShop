@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
-import { ProductDetailProps, ProductProp } from "@/types";
+import { ProductProp } from "@/types";
 import ZoomImage from "./ZoomImage";
 import Link from "next/link";
+
+import { useDispatch } from "react-redux";
+import { addProductToCart } from "@/redux/cart/slice";
 
 interface ProductIdProp {
   id: string;
 }
 
 const Product = ({ id }: ProductIdProp) => {
+  const dispatch = useDispatch();
+
   const idNumber = Number(id);
-  const [product, setProduct] = useState<ProductDetailProps | null>(null);
+  const [product, setProduct] = useState<ProductProp | null>(null);
   const [qntCart, setQntCart] = useState(1);
 
   const handleQntCart = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,6 +41,17 @@ const Product = ({ id }: ProductIdProp) => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
+
+  const handleAddToCartButtonClick = () => {
+    dispatch(
+      addProductToCart({
+        image: product!.img300x300,
+        title: product!.name,
+        price: product!.price,
+        quantity: qntCart,
+      })
+    );
+  };
 
   return (
     <div className="bg-[#f7f7f7] flex flex-col px-2">
@@ -64,7 +80,10 @@ const Product = ({ id }: ProductIdProp) => {
               min={1}
               onChange={handleQntCart}
             />
-            <button className="bg-red-600 text-white py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase">
+            <button
+              onClick={handleAddToCartButtonClick}
+              className="bg-red-600 text-white py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-200 uppercase"
+            >
               add to cart
             </button>
           </div>
