@@ -52,9 +52,24 @@ const cartSlice = createSlice({
     removeBike: (state, action: PayloadAction<string>) => {
       state.bikes = state.bikes.filter((bike) => bike.title !== action.payload);
     },
+    decreaseQuantity: (state, action: PayloadAction<string>) => {
+      state.bikes = state.bikes.map((bike) =>
+        bike.title === action.payload
+          ? { ...bike, quantity: bike.quantity! - 1 }
+          : bike
+      ).filter((bike) => bike.quantity! > 0)
+    },
+    increaseQuantity: (state, action: PayloadAction<string>) => {
+      state.bikes = state.bikes.map((bike) =>
+        bike.title === action.payload
+          ? { ...bike, quantity: bike.quantity! + 1 }
+          : bike
+      ).filter((bike) => bike.quantity! > 0)
+    },
   },
 });
 
-export const { addProductToCart, updateQuantity, removeBike } = cartSlice.actions;
+export const { addProductToCart, updateQuantity, removeBike, decreaseQuantity, increaseQuantity } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

@@ -3,14 +3,19 @@ import { ProductProp } from "@/types";
 import ZoomImage from "./ZoomImage";
 import Link from "next/link";
 
-import { useDispatch } from "react-redux";
 import { addProductToCart } from "@/redux/cart/slice";
+
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
+import ShopBasket from "../ShopBasket";
 
 interface ProductIdProp {
   id: string;
 }
 
 const Product = ({ id }: ProductIdProp) => {
+  const bikesInCart = useSelector((state: RootState) => state.Cart.bikes);
+
   const dispatch = useDispatch();
 
   const idNumber = Number(id);
@@ -63,6 +68,9 @@ const Product = ({ id }: ProductIdProp) => {
           </Link>{" "}
           / {product.name}
         </p>
+      )}
+      {bikesInCart.length > 0 && (
+        <ShopBasket/>
       )}
       <div className="flex flex-col md:flex-row items-center bg-white gap-10 mx-auto w-full  max-w-[1240px] p-6">
         <div className="max-w-[565.4px]">

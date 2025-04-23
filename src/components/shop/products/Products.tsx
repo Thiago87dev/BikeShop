@@ -10,7 +10,13 @@ import CardProducts from "./CardProducts";
 import CardProductsHorizontal from "./CardProductsHorizontal";
 import { useRouter, useSearchParams } from "next/navigation";
 
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
+import ShopBasket from "@/components/ShopBasket";
+
 const Products = () => {
+  const bikesInCart = useSelector((state: RootState) => state.Cart.bikes);
+
   const [products, setProducts] = useState<ProductProp[]>([]);
   const [switchSelected, setSwitchSelected] = useState("grid");
   const [selectedSort, setSelectedSort] = useState("default");
@@ -101,7 +107,7 @@ const Products = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
       <div className="flex items-center justify-center bg-[#3c3638]">
         <div className="flex flex-col items-center justify-center gap-4 h-[200px] text-white">
           <h1 className="text-[50px] font-bold">{selectedCategory}</h1>
@@ -126,6 +132,11 @@ const Products = () => {
           )}
         </div>
       </div>
+      {bikesInCart.length > 0 && (
+        <div className="relative z-50">
+          <ShopBasket />
+        </div>
+      )}
       <div className="flex justify-center px-4">
         <div className="w-full max-w-[1240px] py-4 md:py-10">
           <div className="flex flex-col gap-4 md:gap-0 md:flex-row justify-between py-10">

@@ -100,10 +100,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="flex p-9 items-center cursor-pointer">
+          <div onClick={() => setActiveSandwichMenu(false)} className="flex p-9 items-center cursor-pointer">
             <Link className="flex items-center" href={"/cart"}>
               <FiShoppingCart size={22} />
-              <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
+              <div className="flex items-center justify-center bg-red-600 rounded-full min-w-5 min-h-5 text-white text-xs">
                 {bikesInCart.reduce((acc, item) => acc + item.quantity!, 0)}
               </div>
             </Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
           <div className="flex items-center cursor-pointer">
             <Link className="flex items-center" href={"/cart"}>
               <FiShoppingCart size={22} />
-              <div className="flex items-center justify-center bg-red-600 rounded-full w-5 h-5 text-white text-xs">
+              <div className="flex items-center justify-center bg-red-600 rounded-full min-w-5 min-h-5 text-white text-xs">
                 {bikesInCart.reduce((acc, item) => acc + item.quantity!, 0)}
               </div>
             </Link>
