@@ -113,7 +113,10 @@ const CartContent = () => {
 
               <div className="flex flex-col  gap-10 md:hidden">
                 {bikesInCart.map((item, index) => (
-                  <div className={`${index % 2 === 0 ? "bg-gray-100" : ""} p-2`} key={index}>
+                  <div
+                    className={`${index % 2 === 0 ? "bg-gray-100" : ""} p-2`}
+                    key={index}
+                  >
                     <div className="flex items-center gap-5 mb-5">
                       <div
                         onClick={() => dispatch(removeBike(item.title))}
@@ -221,9 +224,11 @@ const CartContent = () => {
                 </div>
               </div>
               <div>
-                <button className="relative bg-red-600 text-white font-semibold uppercase w-full px-8 mb-16 py-2 hover:bg-red-700 transition-colors duration-200">
-                  proceed to checkout
-                </button>
+                <Link href={'/checkout'}>
+                  <button className="relative bg-red-600 text-white font-semibold uppercase w-full px-8 mb-16 py-2 hover:bg-red-700 transition-colors duration-200">
+                    proceed to checkout
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

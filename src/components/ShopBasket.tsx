@@ -13,6 +13,7 @@ import {
   decreaseQuantity,
   increaseQuantity,
 } from "@/redux/cart/slice";
+import Link from "next/link";
 
 const ShopBasket = () => {
   const dispatch = useDispatch();
@@ -142,9 +143,11 @@ const ShopBasket = () => {
                         }).format(subtotal)}
                       </p>
                     </div>
-                    <button className="bg-black w-full text-white text-lg font-bold rounded-full mb-6 p-2">
-                      Checkout
-                    </button>
+                    <Link href={"/checkout"}>
+                      <button className="bg-black w-full text-white text-lg font-bold rounded-full mb-6 p-2">
+                        Checkout
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
