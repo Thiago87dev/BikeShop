@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import CheckoutBillingForm from "./CheckoutBillingForm";
+import OrdersList from "./OrdersList";
 
 const CheckoutContent = () => {
   const [couponOpen, setCouponOpen] = useState(false);
@@ -11,7 +12,7 @@ const CheckoutContent = () => {
 
   return (
     <div className="flex justify-center bg-[#f7f7f7] text-lg">
-      <div className="w-full max-w-[1240px] bg-white shadow-md my-20 p-6">
+      <div className="w-full max-w-[1240px] bg-white shadow-md my-10 lg:my-20 p-6">
         <div className="bg-[#f7edf1] p-7 border-l-4 border-l-red-600">
           <p>
             Have a coupon?{" "}
@@ -24,12 +25,12 @@ const CheckoutContent = () => {
           </p>
         </div>
         <div
-          className={`flex items-center gap-10 w-full border border-gray-500 rounded-md  overflow-hidden transition-all duration-700 ${
+          className={`flex flex-col sm:flex-row items-center gap-5 sm:gap-10 w-full border border-gray-500 rounded-md  overflow-hidden transition-all duration-700 ${
             couponOpen ? "max-h-40 opacity-100 p-6 mt-10" : "max-h-0 opacity-0"
           }`}
         >
           <input
-            className="p-2 border-2 border-gray-400 rounded-md w-1/2"
+            className="p-2 border-2 border-gray-400 rounded-md w-4/5 sm:w-1/2"
             placeholder="Coupon code"
             type="text"
           />
@@ -37,11 +38,11 @@ const CheckoutContent = () => {
             Apply coupon
           </button>
         </div>
-        <div className="flex justify-between gap-14">
-          <div className="flex flex-col w-1/2 max-w-1/2 my-10">
+        <div className="flex flex-col lg:flex-row justify-between lg:gap-14">
+          <div className="flex flex-col w-full lg:w-1/2 max-w-1/2 mt-10 lg:mt-0 lg:my-10">
             <CheckoutBillingForm/>
           </div>
-          <div className="w-1/2 max-w-1/2 h-[400px] bg-green-500 my-10"></div>
+          <div className="w-full lg:w-1/2 max-w-1/2 mt-10 lg:mt-0 lg:my-10"><OrdersList/></div>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import CountrySelect from "./CountrySelect";
 const CheckoutBillingForm = () => {
   return (
     <form className="flex flex-col gap-4">
-      <h2 className="font-bold text-3xl mb-3">Billing details</h2>
+      <h2 className="font-bold text-3xl mb-3">Billing Details</h2>
       <div className="flex justify-between ">
         <div className="flex gap-1 flex-col w-[48%]">
           <label className="font-bold" htmlFor="firstName">
