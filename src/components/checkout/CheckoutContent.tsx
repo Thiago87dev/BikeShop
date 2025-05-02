@@ -39,10 +39,10 @@ const CheckoutContent = () => {
           </button>
         </div>
         <div className="flex flex-col lg:flex-row justify-between lg:gap-14">
-          <div className="flex flex-col w-full lg:w-1/2 max-w-1/2 mt-10 lg:mt-0 lg:my-10">
+          <div className="flex flex-col w-full lg:w-1/2 max-w-1/2 mt-10 lg:my-10">
             <CheckoutBillingForm/>
           </div>
-          <div className="w-full lg:w-1/2 max-w-1/2 mt-10 lg:mt-0 lg:my-10"><OrdersList/></div>
+          <div className="w-full lg:w-1/2 max-w-1/2 mt-10 lg:my-10"><OrdersList/></div>
         </div>
       </div>
     </div>

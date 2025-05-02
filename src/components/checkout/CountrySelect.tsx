@@ -9,7 +9,7 @@ const countryOptions = countries.map((country) => ({
 }));
 
 const CountrySelect = () => {
-  const [selectedCountry, setSelectedCountry] = useState(countryOptions[186]);
+  const [selectedCountry, setSelectedCountry] = useState(countryOptions[186] || 0);
 
   const handleChange = (option: { value: string; label: string } | null) => {
     if (option) {

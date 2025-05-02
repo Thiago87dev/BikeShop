@@ -27,7 +27,7 @@ const Footer = () => {
 
   const shop = [
     { label: "Shop", path: "/shop" },
-    { label: "Checkout", path: "#" },
+    { label: "Checkout", path: "/checkout" },
     { label: "Cart", path: "/cart" },
     { label: "My account", path: "#" },
     { label: "Blog", path: "/blog" },
