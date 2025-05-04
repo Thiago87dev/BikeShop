@@ -17,6 +17,7 @@ const Checkout = () => {
       setIsReady(true);
     }
   }, [bikesInCart, router]);
+  
   if (!isReady) return null;
   return (
     <div>

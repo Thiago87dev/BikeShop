@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import CheckoutBillingForm from "./CheckoutBillingForm";
-import OrdersList from "./OrdersList";
+import CheckoutFormAndOrderList from "./CheckoutFormAndOrderList";
 
 const CheckoutContent = () => {
   const [couponOpen, setCouponOpen] = useState(false);
@@ -24,6 +23,7 @@ const CheckoutContent = () => {
             </span>
           </p>
         </div>
+        
         <div
           className={`flex flex-col sm:flex-row items-center gap-5 sm:gap-10 w-full border border-gray-500 rounded-md  overflow-hidden transition-all duration-700 ${
             couponOpen ? "max-h-40 opacity-100 p-6 mt-10" : "max-h-0 opacity-0"
@@ -38,12 +38,7 @@ const CheckoutContent = () => {
             Apply coupon
           </button>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between lg:gap-14">
-          <div className="flex flex-col w-full lg:w-1/2 max-w-1/2 mt-10 lg:my-10">
-            <CheckoutBillingForm/>
-          </div>
-          <div className="w-full lg:w-1/2 max-w-1/2 mt-10 lg:my-10"><OrdersList/></div>
-        </div>
+        <CheckoutFormAndOrderList/>
       </div>
     </div>
   );
