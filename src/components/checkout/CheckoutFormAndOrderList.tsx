@@ -40,13 +40,19 @@ const CheckoutFormAndOrderList = () => {
     setSubtotal(total);
   }, [bikesInCart]);
 
+  const formatFieldName = (key: string) => {
+    const formatted = key.replace(/([A-Z])/g, " $1").toLowerCase();
+    return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  };
+
   const handleFormSubmit = () => {
     setFormSubmitted(true);
     const newErrors: { [key: string]: string } = {};
 
     Object.entries(inputData).forEach(([key, value]) => {
       if (!value.trim()) {
-        newErrors[key] = `Billing ${key}`;
+        const formatedKey = formatFieldName(key);
+        newErrors[key] = `Billing ${formatedKey}`;
       }
     });
 
@@ -77,11 +83,20 @@ const CheckoutFormAndOrderList = () => {
             <h2 className="font-bold text-3xl mb-3">Billing Details</h2>
             <div className="flex justify-between ">
               <div className="flex gap-1 flex-col w-[48%]">
-                <label className="font-bold" htmlFor="firstName">
+                <label
+                  className={`font-bold ${
+                    errors["firstName"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="firstName"
+                >
                   First name <span className="text-red-500">*</span>
                 </label>
                 <input
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["firstName"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="firstName"
                   name="firstName"
@@ -90,11 +105,20 @@ const CheckoutFormAndOrderList = () => {
                 />
               </div>
               <div className="flex gap-1 flex-col w-[48%]">
-                <label className="font-bold" htmlFor="lastName">
+                <label
+                  className={`font-bold ${
+                    errors["lastName"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="lastName"
+                >
                   Last name <span className="text-red-500">*</span>
                 </label>
                 <input
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["lastName"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="lastName"
                   name="lastName"
@@ -127,11 +151,19 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold">
+                <label
+                  className={`font-bold ${
+                    errors["street"] ? "text-red-500" : ""
+                  }`}
+                >
                   Street address <span className="text-red-500">*</span>
                 </label>
                 <input
-                  className="border-2 rounded-md p-2 mb-1"
+                  className={` ${
+                    errors["street"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="streetAddress"
                   placeholder="House number and street name"
@@ -148,11 +180,20 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold" htmlFor="townCity">
+                <label
+                  className={`font-bold ${
+                    errors["city"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="townCity"
+                >
                   Town / City <span className="text-red-500">*</span>
                 </label>
                 <input
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["city"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="townCity"
                   name="city"
@@ -163,14 +204,23 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold" htmlFor="state">
+                <label
+                  className={`font-bold ${
+                    errors["state"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="state"
+                >
                   State / County <span className="text-red-500">*</span>
                 </label>
                 <input
                   name="state"
                   value={inputData.state}
                   onChange={handelInputChange}
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["state"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="state"
                 />
@@ -178,11 +228,20 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold" htmlFor="postcode">
+                <label
+                  className={`font-bold ${
+                    errors["postCode"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="postcode"
+                >
                   Postcode / ZIP <span className="text-red-500">*</span>
                 </label>
                 <input
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["postCode"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="postcode"
                   name="postCode"
@@ -193,14 +252,23 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold" htmlFor="phone">
+                <label
+                  className={`font-bold ${
+                    errors["phone"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="phone"
+                >
                   Phone <span className="text-red-500">*</span>
                 </label>
                 <input
                   name="phone"
                   value={inputData.phone}
                   onChange={handelInputChange}
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["phone"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="phone"
                 />
@@ -208,14 +276,23 @@ const CheckoutFormAndOrderList = () => {
             </div>
             <div>
               <div className="flex gap-1 flex-col">
-                <label className="font-bold" htmlFor="email">
+                <label
+                  className={`font-bold ${
+                    errors["email"] ? "text-red-500" : ""
+                  }`}
+                  htmlFor="email"
+                >
                   Email address <span className="text-red-500">*</span>
                 </label>
                 <input
                   name="email"
                   value={inputData.email}
                   onChange={handelInputChange}
-                  className="border-2 rounded-md p-2"
+                  className={` ${
+                    errors["email"]
+                      ? "border-2 rounded-md p-2 border-red-500 focus:outline-none"
+                      : "border-2 rounded-md p-2"
+                  }`}
                   type="text"
                   id="email"
                 />
