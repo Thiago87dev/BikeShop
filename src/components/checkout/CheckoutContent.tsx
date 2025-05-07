@@ -4,9 +4,21 @@ import CheckoutFormAndOrderList from "./CheckoutFormAndOrderList";
 
 const CheckoutContent = () => {
   const [couponOpen, setCouponOpen] = useState(false);
+  const [couponError, setCouponError] = useState("");
+  const [couponValue, setCouponValue] = useState("");
 
   const handleSwitchCoupon = () => {
     setCouponOpen(!couponOpen);
+  };
+
+  const handleApplyCoupon = () => {
+    if (couponValue === "".trim()) {
+      setCouponError("Please enter a coupon code.");
+    } else if (couponValue !== "Thiago Alves") {
+      setCouponError(`Coupon "${couponValue}" does not exist!`);
+    } else {
+      setCouponError(`❤️`);
+    }
   };
 
   return (
@@ -23,22 +35,33 @@ const CheckoutContent = () => {
             </span>
           </p>
         </div>
-        
+
         <div
           className={`flex flex-col sm:flex-row items-center gap-5 sm:gap-10 w-full border border-gray-500 rounded-md  overflow-hidden transition-all duration-700 ${
             couponOpen ? "max-h-40 opacity-100 p-6 mt-10" : "max-h-0 opacity-0"
           }`}
         >
-          <input
-            className="p-2 border-2 border-gray-400 rounded-md w-4/5 sm:w-1/2"
-            placeholder="Coupon code"
-            type="text"
-          />
-          <button className="bg-red-600 text-white h-10 text-base py-2 px-3 font-semibold uppercase w-max  hover:bg-red-700 transition-colors duration-200 tracking-widest">
+          <div className="w-4/5 sm:w-1/2">
+            <input
+              className="p-2 border-2 border-gray-400 rounded-md w-full"
+              placeholder="Coupon code"
+              type="text"
+              value={couponValue}
+              onChange={(e) => {
+                setCouponValue(e.target.value);
+                setCouponError("");
+              }}
+            />
+            <p>{couponError}</p>
+          </div>
+          <button
+            onClick={handleApplyCoupon}
+            className="bg-red-600 text-white h-10 text-base py-2 px-3 font-semibold uppercase w-max  hover:bg-red-700 transition-colors duration-200 tracking-widest"
+          >
             Apply coupon
           </button>
         </div>
-        <CheckoutFormAndOrderList/>
+        <CheckoutFormAndOrderList />
       </div>
     </div>
   );
