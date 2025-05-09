@@ -98,7 +98,7 @@ const Footer = () => {
           <div>
             <p className="text-center lg:text-left">
               ©{year} Bike Shop | Designed and coded by{" "}
-              <Link href={'#'}>
+              <Link href={'https://portifolio2-six-black.vercel.app/en'}>
               <span className="text-red-500 underline whitespace-nowrap">
                 Thiago Alves
               </span>
